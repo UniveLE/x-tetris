@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>X-Tetris:  File sorgente src/utils/cpu/cpu.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">X-Tetris
+   &#160;<span id="projectnumber">1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generato da Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Cerca','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Cerca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_313caf1132e152dd9b58bea13a4052ca.html">utils</a></li><li class="navelem"><a class="el" href="dir_3d79877f1eccb8a771a6f30aa72adc84.html">cpu</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">cpu.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="cpu_8h.html">Vai alla documentazione di questo file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef _CPU_H</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define _CPU_H</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="cpu_8h.html#a2d9403dc0d524bb3b1808a8caeb2f99b">   26</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="cpu_8h.html#a2d9403dc0d524bb3b1808a8caeb2f99b">findScore</a>(<a class="code" href="structplayer.html">player</a>* cpu_player, <span class="keywordtype">int</span> position, <span class="keywordtype">int</span> <a class="code" href="tetraminoes_8h.html#a306bf492510accaa491885d2f727dc7a">rotation</a>, <span class="keywordtype">int</span>* x_height, <span class="keywordtype">int</span>* r_height);</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="cpu_8h.html#a8d73e3f9068841b17aff9a82111c6db1">   42</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="cpu_8h.html#a8d73e3f9068841b17aff9a82111c6db1">findHeight</a>(<a class="code" href="structplayer.html">player</a>* cpu_player, <span class="keywordtype">int</span> position, <span class="keywordtype">int</span> <a class="code" href="tetraminoes_8h.html#a306bf492510accaa491885d2f727dc7a">rotation</a>, <span class="keywordtype">int</span>* x_score, <span class="keywordtype">int</span>* r_score);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keywordtype">char</span>* <a class="code" href="cpu_8h.html#a46d22363ee6e8708cf931090205b1244">moveTo</a>(<a class="code" href="structplayer.html">player</a>* cpu_player, <span class="keywordtype">int</span> position, <span class="keywordtype">int</span> push_end);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keywordtype">void</span> <a class="code" href="cpu_8h.html#a3d8148a27e8524d0cda5af56d3e9bf63">cpu</a>(<a class="code" href="structplayer.html">player</a> *<a class="code" href="structplayer.html">player</a>, <span class="keywordtype">int</span> tetramino_width, <span class="keywordtype">int</span> position, <span class="keywordtype">int</span> <a class="code" href="tetraminoes_8h.html#a306bf492510accaa491885d2f727dc7a">rotation</a>, <span class="keywordtype">int</span>* score, <span class="keywordtype">int</span>* x_score, <span class="keywordtype">int</span>* r_score, <span class="keywordtype">int</span>* height, <span class="keywordtype">int</span>* x_height, <span class="keywordtype">int</span>* r_height);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keywordtype">void</span> <a class="code" href="cpu_8h.html#a446eefb48d5083a45dcc242d82a66e12">moveCPU</a>(<a class="code" href="structplayer.html">player</a>* cpu_player, <span class="keywordtype">int</span>* score, <span class="keywordtype">int</span>* x_score, <span class="keywordtype">int</span>* r_score, <span class="keywordtype">int</span>* height, <span class="keywordtype">int</span>* x_height, <span class="keywordtype">int</span>* r_height);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="acpu_8h_html_a2d9403dc0d524bb3b1808a8caeb2f99b"><div class="ttname"><a href="cpu_8h.html#a2d9403dc0d524bb3b1808a8caeb2f99b">findScore</a></div><div class="ttdeci">void findScore(player *cpu_player, int position, int rotation, int *x_height, int *r_height)</div></div>
+<div class="ttc" id="acpu_8h_html_a3d8148a27e8524d0cda5af56d3e9bf63"><div class="ttname"><a href="cpu_8h.html#a3d8148a27e8524d0cda5af56d3e9bf63">cpu</a></div><div class="ttdeci">void cpu(player *player, int tetramino_width, int position, int rotation, int *score, int *x_score, int *r_score, int *height, int *x_height, int *r_height)</div><div class="ttdef"><b>Definition:</b> cpu.c:122</div></div>
+<div class="ttc" id="acpu_8h_html_a446eefb48d5083a45dcc242d82a66e12"><div class="ttname"><a href="cpu_8h.html#a446eefb48d5083a45dcc242d82a66e12">moveCPU</a></div><div class="ttdeci">void moveCPU(player *cpu_player, int *score, int *x_score, int *r_score, int *height, int *x_height, int *r_height)</div><div class="ttdef"><b>Definition:</b> cpu.c:179</div></div>
+<div class="ttc" id="acpu_8h_html_a46d22363ee6e8708cf931090205b1244"><div class="ttname"><a href="cpu_8h.html#a46d22363ee6e8708cf931090205b1244">moveTo</a></div><div class="ttdeci">char * moveTo(player *cpu_player, int position, int push_end)</div><div class="ttdef"><b>Definition:</b> cpu.c:81</div></div>
+<div class="ttc" id="acpu_8h_html_a8d73e3f9068841b17aff9a82111c6db1"><div class="ttname"><a href="cpu_8h.html#a8d73e3f9068841b17aff9a82111c6db1">findHeight</a></div><div class="ttdeci">void findHeight(player *cpu_player, int position, int rotation, int *x_score, int *r_score)</div></div>
+<div class="ttc" id="astructplayer_html"><div class="ttname"><a href="structplayer.html">player</a></div><div class="ttdef"><b>Definition:</b> player.h:18</div></div>
+<div class="ttc" id="atetraminoes_8h_html_a306bf492510accaa491885d2f727dc7a"><div class="ttname"><a href="tetraminoes_8h.html#a306bf492510accaa491885d2f727dc7a">rotation</a></div><div class="ttdeci">int rotation(player *player)</div><div class="ttdef"><b>Definition:</b> tetraminoes.c:116</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generato da&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

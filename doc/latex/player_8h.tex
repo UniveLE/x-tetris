@@ -1,0 +1,217 @@
+\hypertarget{player_8h}{}\doxysection{Riferimenti per il file src/utils/player/player.h}
+\label{player_8h}\index{src/utils/player/player.h@{src/utils/player/player.h}}
+
+
+Libreria per la gestione dei giocatori.  
+
+
+{\ttfamily \#include \char`\"{}../../game.\+h\char`\"{}}\newline
+Grafo delle dipendenze di inclusione per player.\+h\+:
+% FIG 0
+Questo grafo mostra quali altri file includono direttamente o indirettamente questo file\+:
+% FIG 1
+\doxysubsection*{Strutture dati}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structplayer}{player}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Tipi enumerati (enum)}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{player_8h_a72831687227b0db6b2d54f351acb7cd3}{Directions\+\_\+p1}} \{ {\bfseries DIRECTION\+\_\+\+P1\+\_\+\+ROTATE} = \textquotesingle{} \textquotesingle{}
+, {\bfseries DIRECTION\+\_\+\+P1\+\_\+\+DOWN} = \textquotesingle{}s\textquotesingle{}
+, {\bfseries DIRECTION\+\_\+\+P1\+\_\+\+LEFT} = \textquotesingle{}a\textquotesingle{}
+, {\bfseries DIRECTION\+\_\+\+P1\+\_\+\+RIGHT} = \textquotesingle{}d\textquotesingle{}
+ \}
+\item 
+enum \mbox{\hyperlink{player_8h_a49afcaac4a392b22ea83fbd2eb6f7674}{Directions\+\_\+p2}} \{ {\bfseries DIRECTION\+\_\+\+P2\+\_\+\+ROTATE} = 67
+, {\bfseries DIRECTION\+\_\+\+P2\+\_\+\+DOWN} = 66
+, {\bfseries DIRECTION\+\_\+\+P2\+\_\+\+LEFT} = 65
+, {\bfseries DIRECTION\+\_\+\+P2\+\_\+\+RIGHT} = 68
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{player_8h_a8aa25726a95e088e93c8c717aca818a0}{init\+Player}} (\mbox{\hyperlink{structplayer}{player}} $\ast$\mbox{\hyperlink{structplayer}{player}})
+\item 
+int \mbox{\hyperlink{player_8h_a85c58439906c1cf88467f66ba942aef4}{set\+Score}} (\mbox{\hyperlink{structplayer}{player}} $\ast$\mbox{\hyperlink{structplayer}{player}})
+\item 
+void \mbox{\hyperlink{player_8h_a0e2239b2305f3bc2705f94cafa273157}{set\+Nickname}} (\mbox{\hyperlink{structplayer}{player}} $\ast$\mbox{\hyperlink{structplayer}{player}})
+\item 
+int \mbox{\hyperlink{player_8h_a78af85c22b6279d4125564649b708ea4}{game\+Over}} (\mbox{\hyperlink{structplayer}{player}} $\ast$\mbox{\hyperlink{structplayer}{player}})
+\item 
+void \mbox{\hyperlink{player_8h_a2716064bd86d26a77430285bf0fc5652}{print\+Nickname}} (\mbox{\hyperlink{structplayer}{player}} $\ast$\mbox{\hyperlink{structplayer}{player}})
+\item 
+void \mbox{\hyperlink{player_8h_a6bc5883e80d99ea5ceb280e346e31e78}{print\+Playground}} (\mbox{\hyperlink{structplayer}{player}} $\ast$player1, \mbox{\hyperlink{structplayer}{player}} $\ast$player2, int max\+Tetraminoes)
+\item 
+void \mbox{\hyperlink{player_8h_a14f2e45a661d4c8956be370067450a00}{save\+Score}} (\mbox{\hyperlink{structplayer}{player}} $\ast$\mbox{\hyperlink{structplayer}{player}}, \mbox{\hyperlink{structgame}{game}} $\ast$\mbox{\hyperlink{structgame}{game}})
+\item 
+void \mbox{\hyperlink{player_8h_a63ec27ed4598a308e4d0c4435ce77fb0}{print\+Scores}} (char $\ast$query)
+\item 
+void \mbox{\hyperlink{player_8h_a12b0d1f1f77124e08d6da111ed125ad9}{reverse\+Playground}} (\mbox{\hyperlink{structplayer}{player}} $\ast$\mbox{\hyperlink{structplayer}{player}}, int lines)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrizione dettagliata}
+Libreria per la gestione dei giocatori. 
+
+\begin{DoxyDate}{Data}
+18/10/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Autore}
+Lorenzo Vaccher \& Elia Coro\textquotesingle{} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentazione dei tipi enumerati}
+\mbox{\Hypertarget{player_8h_a72831687227b0db6b2d54f351acb7cd3}\label{player_8h_a72831687227b0db6b2d54f351acb7cd3}} 
+\index{player.h@{player.h}!Directions\_p1@{Directions\_p1}}
+\index{Directions\_p1@{Directions\_p1}!player.h@{player.h}}
+\doxysubsubsection{\texorpdfstring{Directions\_p1}{Directions\_p1}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{player_8h_a72831687227b0db6b2d54f351acb7cd3}{Directions\+\_\+p1}}}
+
+Direzioni dei tetramini riferiti al player 1. \mbox{\Hypertarget{player_8h_a49afcaac4a392b22ea83fbd2eb6f7674}\label{player_8h_a49afcaac4a392b22ea83fbd2eb6f7674}} 
+\index{player.h@{player.h}!Directions\_p2@{Directions\_p2}}
+\index{Directions\_p2@{Directions\_p2}!player.h@{player.h}}
+\doxysubsubsection{\texorpdfstring{Directions\_p2}{Directions\_p2}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{player_8h_a49afcaac4a392b22ea83fbd2eb6f7674}{Directions\+\_\+p2}}}
+
+Direzioni dei tetramini riferiti al player 2. 
+
+\doxysubsection{Documentazione delle funzioni}
+\mbox{\Hypertarget{player_8h_a78af85c22b6279d4125564649b708ea4}\label{player_8h_a78af85c22b6279d4125564649b708ea4}} 
+\index{player.h@{player.h}!gameOver@{gameOver}}
+\index{gameOver@{gameOver}!player.h@{player.h}}
+\doxysubsubsection{\texorpdfstring{gameOver()}{gameOver()}}
+{\footnotesize\ttfamily int game\+Over (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structplayer}{player}} $\ast$}]{player }\end{DoxyParamCaption})}
+
+Funzione utilizzata per verificare se l\textquotesingle{}utente ha perso.
+
+
+\begin{DoxyParams}{Parametri}
+{\em player} & player struct del giocatore \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+1 se l\textquotesingle{}utente ha perso, 0 se il gioco continua 
+\end{DoxyReturn}
+\mbox{\Hypertarget{player_8h_a8aa25726a95e088e93c8c717aca818a0}\label{player_8h_a8aa25726a95e088e93c8c717aca818a0}} 
+\index{player.h@{player.h}!initPlayer@{initPlayer}}
+\index{initPlayer@{initPlayer}!player.h@{player.h}}
+\doxysubsubsection{\texorpdfstring{initPlayer()}{initPlayer()}}
+{\footnotesize\ttfamily void init\+Player (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structplayer}{player}} $\ast$}]{player }\end{DoxyParamCaption})}
+
+Funzione utilizzata per inizializzare la struct relativa al giocatore.
+
+
+\begin{DoxyParams}{Parametri}
+{\em player} & indirizzo di memoria della struct del giocatore da inizializzare. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{player_8h_a2716064bd86d26a77430285bf0fc5652}\label{player_8h_a2716064bd86d26a77430285bf0fc5652}} 
+\index{player.h@{player.h}!printNickname@{printNickname}}
+\index{printNickname@{printNickname}!player.h@{player.h}}
+\doxysubsubsection{\texorpdfstring{printNickname()}{printNickname()}}
+{\footnotesize\ttfamily void print\+Nickname (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structplayer}{player}} $\ast$}]{player }\end{DoxyParamCaption})}
+
+Funzione utilizzata per stampare il nome del giocatore sopra il playground.
+
+
+\begin{DoxyParams}{Parametri}
+{\em player} & giocatore \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{player_8h_a6bc5883e80d99ea5ceb280e346e31e78}\label{player_8h_a6bc5883e80d99ea5ceb280e346e31e78}} 
+\index{player.h@{player.h}!printPlayground@{printPlayground}}
+\index{printPlayground@{printPlayground}!player.h@{player.h}}
+\doxysubsubsection{\texorpdfstring{printPlayground()}{printPlayground()}}
+{\footnotesize\ttfamily void print\+Playground (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structplayer}{player}} $\ast$}]{player1,  }\item[{\mbox{\hyperlink{structplayer}{player}} $\ast$}]{player2,  }\item[{int}]{max\+Tetraminoes }\end{DoxyParamCaption})}
+
+Funzione utilizzata per stampare il campo da gioco dei giocatori.
+
+
+\begin{DoxyParams}{Parametri}
+{\em player} & giocatore 1 \\
+\hline
+{\em player} & giocatore 2 \\
+\hline
+{\em max\+Tetraminoes} & tetramini massimi utilizzati per giocatore \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{player_8h_a63ec27ed4598a308e4d0c4435ce77fb0}\label{player_8h_a63ec27ed4598a308e4d0c4435ce77fb0}} 
+\index{player.h@{player.h}!printScores@{printScores}}
+\index{printScores@{printScores}!player.h@{player.h}}
+\doxysubsubsection{\texorpdfstring{printScores()}{printScores()}}
+{\footnotesize\ttfamily void print\+Scores (\begin{DoxyParamCaption}\item[{char $\ast$}]{query }\end{DoxyParamCaption})}
+
+Funzione utilizzata per stampare a video tutti i punteggi dei giocatori.
+
+
+\begin{DoxyParams}{Parametri}
+{\em query} & stringa da ricercare come nickname. Se NULL vengono mostrati tutti i risultati! \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{player_8h_a12b0d1f1f77124e08d6da111ed125ad9}\label{player_8h_a12b0d1f1f77124e08d6da111ed125ad9}} 
+\index{player.h@{player.h}!reversePlayground@{reversePlayground}}
+\index{reversePlayground@{reversePlayground}!player.h@{player.h}}
+\doxysubsubsection{\texorpdfstring{reversePlayground()}{reversePlayground()}}
+{\footnotesize\ttfamily void reverse\+Playground (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structplayer}{player}} $\ast$}]{player,  }\item[{int}]{lines }\end{DoxyParamCaption})}
+
+Funzione utilizzata nel multigiocatore quando un player effettua 3 o più punti. In particolare questa funzione viene utilizzata per invertire il campo (gli spazi vuoti diventano pieni e viceversa).
+
+
+\begin{DoxyParams}{Parametri}
+{\em player} & campo del giocatore da modificare \\
+\hline
+{\em lines} & linee da invertire \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{player_8h_a14f2e45a661d4c8956be370067450a00}\label{player_8h_a14f2e45a661d4c8956be370067450a00}} 
+\index{player.h@{player.h}!saveScore@{saveScore}}
+\index{saveScore@{saveScore}!player.h@{player.h}}
+\doxysubsubsection{\texorpdfstring{saveScore()}{saveScore()}}
+{\footnotesize\ttfamily void save\+Score (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structplayer}{player}} $\ast$}]{player,  }\item[{\mbox{\hyperlink{structgame}{game}} $\ast$}]{game }\end{DoxyParamCaption})}
+
+Funzione utilizzata per salvare il punteggio del giocatore nel file scores.\+svg. Vengono salvate tutte le partite di un determinato giocatore, i punteggi non vengono sovrascritti.
+
+
+\begin{DoxyParams}{Parametri}
+{\em player} & struct del giocatore. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{player_8h_a0e2239b2305f3bc2705f94cafa273157}\label{player_8h_a0e2239b2305f3bc2705f94cafa273157}} 
+\index{player.h@{player.h}!setNickname@{setNickname}}
+\index{setNickname@{setNickname}!player.h@{player.h}}
+\doxysubsubsection{\texorpdfstring{setNickname()}{setNickname()}}
+{\footnotesize\ttfamily void set\+Nickname (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structplayer}{player}} $\ast$}]{player }\end{DoxyParamCaption})}
+
+Funzioni utilizzate per impostare il nickname del player.
+
+
+\begin{DoxyParams}{Parametri}
+{\em player} & giocatore \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{player_8h_a85c58439906c1cf88467f66ba942aef4}\label{player_8h_a85c58439906c1cf88467f66ba942aef4}} 
+\index{player.h@{player.h}!setScore@{setScore}}
+\index{setScore@{setScore}!player.h@{player.h}}
+\doxysubsubsection{\texorpdfstring{setScore()}{setScore()}}
+{\footnotesize\ttfamily int set\+Score (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structplayer}{player}} $\ast$}]{player }\end{DoxyParamCaption})}
+
+Funzione utilizzata per verificare se l\textquotesingle{}utente ha effettuato dei punti. In particolare\+:
+\begin{DoxyItemize}
+\item La rimozione di una riga -\/$>$ 1 punto
+\item La rimozione di due righe con un solo pezzo -\/$>$ 3 punti
+\item La rimozione di tre righe con un solo pezzo -\/$>$ 6 punti
+\item La rimozione di quattro righe con un solo pezzo -\/$>$ 12 punti Se viene eliminata una riga, i tetramini sopra la riga traslano verso il basso.
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parametri}
+{\em player} & struct del giocatore \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+numero di righe eliminate 
+\end{DoxyReturn}

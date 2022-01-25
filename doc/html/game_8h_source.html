@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>X-Tetris:  File sorgente src/game.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">X-Tetris
+   &#160;<span id="projectnumber">1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generato da Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Cerca','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Cerca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">game.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="game_8h.html">Vai alla documentazione di questo file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef _GAME_H</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define _GAME_H</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> DIFF_BOT_DIFFICULTY = 2500;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* LOGO_FLE_NAME = <span class="stringliteral">&quot;logo.txt&quot;</span>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* SCORE_LOGO_FLE_NAME = <span class="stringliteral">&quot;scores_logo.txt&quot;</span>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="game_8h.html#a6bdf1adf0ba98c2dad6d1e5b19e5a897">   34</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  EASY = 8000,</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  MEDIUM = 6000,</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  HARD = 4000</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;} <a class="code" href="game_8h.html#a6bdf1adf0ba98c2dad6d1e5b19e5a897">difficulty</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="game_8h.html#a115508efe199d81fdc8a4d76700c8e94">   43</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  SINGLE_PLAYER = 1,</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  MULTI_PLAYER = 2,</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  PLAYER_VS_BOT = 3,</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  PLAYER_SCORE = 4,</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  EXIT = 5</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;} <a class="code" href="game_8h.html#a115508efe199d81fdc8a4d76700c8e94">gameMode</a>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="structgame.html">   54</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <a class="code" href="game_8h.html#a115508efe199d81fdc8a4d76700c8e94">gameMode</a> <a class="code" href="game_8h.html#a115508efe199d81fdc8a4d76700c8e94">gameMode</a>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="player_8h.html#a78af85c22b6279d4125564649b708ea4">gameOver</a>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordtype">int</span> tetraminoesNumber;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordtype">int</span>* tetraminoes; <span class="comment">/*vettore contenente tutti i tetramini da inserire*/</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <a class="code" href="game_8h.html#a6bdf1adf0ba98c2dad6d1e5b19e5a897">difficulty</a> <a class="code" href="game_8h.html#a6bdf1adf0ba98c2dad6d1e5b19e5a897">difficulty</a>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;} <a class="code" href="structgame.html">game</a>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keywordtype">void</span> <a class="code" href="game_8h.html#ab1f321a2f17fa8ba0f5ab4e2621fd6d6">startGame</a>();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="agame_8h_html_a115508efe199d81fdc8a4d76700c8e94"><div class="ttname"><a href="game_8h.html#a115508efe199d81fdc8a4d76700c8e94">gameMode</a></div><div class="ttdeci">gameMode</div><div class="ttdef"><b>Definition:</b> game.h:43</div></div>
+<div class="ttc" id="agame_8h_html_a6bdf1adf0ba98c2dad6d1e5b19e5a897"><div class="ttname"><a href="game_8h.html#a6bdf1adf0ba98c2dad6d1e5b19e5a897">difficulty</a></div><div class="ttdeci">difficulty</div><div class="ttdef"><b>Definition:</b> game.h:34</div></div>
+<div class="ttc" id="agame_8h_html_ab1f321a2f17fa8ba0f5ab4e2621fd6d6"><div class="ttname"><a href="game_8h.html#ab1f321a2f17fa8ba0f5ab4e2621fd6d6">startGame</a></div><div class="ttdeci">void startGame()</div><div class="ttdef"><b>Definition:</b> game.c:225</div></div>
+<div class="ttc" id="aplayer_8h_html_a78af85c22b6279d4125564649b708ea4"><div class="ttname"><a href="player_8h.html#a78af85c22b6279d4125564649b708ea4">gameOver</a></div><div class="ttdeci">int gameOver(player *player)</div><div class="ttdef"><b>Definition:</b> player.c:43</div></div>
+<div class="ttc" id="astructgame_html"><div class="ttname"><a href="structgame.html">game</a></div><div class="ttdef"><b>Definition:</b> game.h:54</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generato da&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

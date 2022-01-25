@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>X-Tetris:  File sorgente src/utils/tetraminoes/tetraminoes.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">X-Tetris
+   &#160;<span id="projectnumber">1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generato da Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Cerca','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Cerca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_313caf1132e152dd9b58bea13a4052ca.html">utils</a></li><li class="navelem"><a class="el" href="dir_04a6babf8a0d92d0a128325d6fc207d8.html">tetraminoes</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">tetraminoes.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="tetraminoes_8h.html">Vai alla documentazione di questo file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef _TETRAMINOES_H</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define _TETRAMINOES_H</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;../player/player.h&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;../../game.h&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keywordtype">int</span> <a class="code" href="tetraminoes_8h.html#a55b97069b24be9f842aed839b48c072f">canMove</a>(<span class="keywordtype">int</span> direction, <a class="code" href="structplayer.html">player</a> *<a class="code" href="structplayer.html">player</a>);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keywordtype">int</span> <a class="code" href="tetraminoes_8h.html#a306bf492510accaa491885d2f727dc7a">rotation</a>(<a class="code" href="structplayer.html">player</a> *<a class="code" href="structplayer.html">player</a>);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keywordtype">int</span> <a class="code" href="tetraminoes_8h.html#a0c0dfa874cad265924d1b2e731e34cfb">move</a>(<span class="keywordtype">int</span> direction, <a class="code" href="structplayer.html">player</a> *<a class="code" href="structplayer.html">player</a>);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keywordtype">int</span> <a class="code" href="tetraminoes_8h.html#ace28bc880e89deb16be674162244f76d">insertTetromino</a>(<a class="code" href="structplayer.html">player</a> *<a class="code" href="structplayer.html">player</a>, <a class="code" href="structgame.html">game</a> *<a class="code" href="structgame.html">game</a>);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keywordtype">int</span> <a class="code" href="tetraminoes_8h.html#a268d1b1529d544b036a138535af483cf">moveTetramino</a>(<span class="keywordtype">char</span> direction, <a class="code" href="structplayer.html">player</a> *<a class="code" href="structplayer.html">player</a>);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keywordtype">void</span> <a class="code" href="tetraminoes_8h.html#a1d352ed0dbbd25ce3f72e4c09669179a">conversion</a>(<a class="code" href="structplayer.html">player</a> * <a class="code" href="structplayer.html">player</a>);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="astructgame_html"><div class="ttname"><a href="structgame.html">game</a></div><div class="ttdef"><b>Definition:</b> game.h:54</div></div>
+<div class="ttc" id="astructplayer_html"><div class="ttname"><a href="structplayer.html">player</a></div><div class="ttdef"><b>Definition:</b> player.h:18</div></div>
+<div class="ttc" id="atetraminoes_8h_html_a0c0dfa874cad265924d1b2e731e34cfb"><div class="ttname"><a href="tetraminoes_8h.html#a0c0dfa874cad265924d1b2e731e34cfb">move</a></div><div class="ttdeci">int move(int direction, player *player)</div><div class="ttdef"><b>Definition:</b> tetraminoes.c:212</div></div>
+<div class="ttc" id="atetraminoes_8h_html_a1d352ed0dbbd25ce3f72e4c09669179a"><div class="ttname"><a href="tetraminoes_8h.html#a1d352ed0dbbd25ce3f72e4c09669179a">conversion</a></div><div class="ttdeci">void conversion(player *player)</div><div class="ttdef"><b>Definition:</b> tetraminoes.c:64</div></div>
+<div class="ttc" id="atetraminoes_8h_html_a268d1b1529d544b036a138535af483cf"><div class="ttname"><a href="tetraminoes_8h.html#a268d1b1529d544b036a138535af483cf">moveTetramino</a></div><div class="ttdeci">int moveTetramino(char direction, player *player)</div><div class="ttdef"><b>Definition:</b> tetraminoes.c:84</div></div>
+<div class="ttc" id="atetraminoes_8h_html_a306bf492510accaa491885d2f727dc7a"><div class="ttname"><a href="tetraminoes_8h.html#a306bf492510accaa491885d2f727dc7a">rotation</a></div><div class="ttdeci">int rotation(player *player)</div><div class="ttdef"><b>Definition:</b> tetraminoes.c:116</div></div>
+<div class="ttc" id="atetraminoes_8h_html_a55b97069b24be9f842aed839b48c072f"><div class="ttname"><a href="tetraminoes_8h.html#a55b97069b24be9f842aed839b48c072f">canMove</a></div><div class="ttdeci">int canMove(int direction, player *player)</div><div class="ttdef"><b>Definition:</b> tetraminoes.c:171</div></div>
+<div class="ttc" id="atetraminoes_8h_html_ace28bc880e89deb16be674162244f76d"><div class="ttname"><a href="tetraminoes_8h.html#ace28bc880e89deb16be674162244f76d">insertTetromino</a></div><div class="ttdeci">int insertTetromino(player *player, game *game)</div><div class="ttdef"><b>Definition:</b> tetraminoes.c:260</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generato da&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

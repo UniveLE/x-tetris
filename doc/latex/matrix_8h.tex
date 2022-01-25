@@ -1,0 +1,65 @@
+\hypertarget{matrix_8h}{}\doxysection{Riferimenti per il file src/utils/matrix/matrix.h}
+\label{matrix_8h}\index{src/utils/matrix/matrix.h@{src/utils/matrix/matrix.h}}
+
+
+Libreria per la gestione delle matrici.  
+
+
+\doxysubsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \mbox{\hyperlink{matrix_8h_a0c135f620219effae7da9a4fe29d5053}{get\+Sub\+Matrix}} (char matrix\mbox{[}19\mbox{]}\mbox{[}10\mbox{]}, int $\ast$x, int $\ast$y, int $\ast$dimension)
+\item 
+void \mbox{\hyperlink{matrix_8h_a4120e7f39fbfaabf1585799077424544}{rotate\+Matrix}} (char $\ast$sub\+\_\+matrix, int dimension)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrizione dettagliata}
+Libreria per la gestione delle matrici. 
+
+\begin{DoxyDate}{Data}
+18/10/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Autore}
+Lorenzo Vaccher \& Elia Coro\textquotesingle{} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentazione delle funzioni}
+\mbox{\Hypertarget{matrix_8h_a0c135f620219effae7da9a4fe29d5053}\label{matrix_8h_a0c135f620219effae7da9a4fe29d5053}} 
+\index{matrix.h@{matrix.h}!getSubMatrix@{getSubMatrix}}
+\index{getSubMatrix@{getSubMatrix}!matrix.h@{matrix.h}}
+\doxysubsubsection{\texorpdfstring{getSubMatrix()}{getSubMatrix()}}
+{\footnotesize\ttfamily char$\ast$ get\+Sub\+Matrix (\begin{DoxyParamCaption}\item[{char}]{matrix\mbox{[}19\mbox{]}\mbox{[}10\mbox{]},  }\item[{int $\ast$}]{x,  }\item[{int $\ast$}]{y,  }\item[{int $\ast$}]{dimension }\end{DoxyParamCaption})}
+
+Funzione utilizzata per prendere la sottomatrice contenente il tetramino.
+
+
+\begin{DoxyParams}{Parametri}
+{\em matrix} & matrice contente il playground \\
+\hline
+{\em x} & posizione x della sottomatrice, \\
+\hline
+{\em y} & posizione y della sottomatrice, \\
+\hline
+{\em dimension} & dimensione della sottomatrice,\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+sottomatrice trovata 
+\end{DoxyReturn}
+\mbox{\Hypertarget{matrix_8h_a4120e7f39fbfaabf1585799077424544}\label{matrix_8h_a4120e7f39fbfaabf1585799077424544}} 
+\index{matrix.h@{matrix.h}!rotateMatrix@{rotateMatrix}}
+\index{rotateMatrix@{rotateMatrix}!matrix.h@{matrix.h}}
+\doxysubsubsection{\texorpdfstring{rotateMatrix()}{rotateMatrix()}}
+{\footnotesize\ttfamily void rotate\+Matrix (\begin{DoxyParamCaption}\item[{char $\ast$}]{sub\+\_\+matrix,  }\item[{int}]{dimension }\end{DoxyParamCaption})}
+
+Funzione che ruota la matrice contenete il tetramino.
+
+
+\begin{DoxyParams}{Parametri}
+{\em sub\+\_\+matrix} & matrice contenente il tetramino da ruotare \\
+\hline
+{\em dimension} & dimensione della matrice, \\
+\hline
+\end{DoxyParams}

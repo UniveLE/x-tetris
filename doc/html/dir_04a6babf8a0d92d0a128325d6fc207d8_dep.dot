@@ -1,0 +1,13 @@
+digraph "src/utils/tetraminoes" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_313caf1132e152dd9b58bea13a4052ca {
+    graph [ bgcolor="#ddddee", pencolor="black", label="utils" fontname="Helvetica", fontsize="10", URL="dir_313caf1132e152dd9b58bea13a4052ca.html"]
+  dir_462962e8fe55afe381ca33c7e04c9298 [shape=box label="matrix" URL="dir_462962e8fe55afe381ca33c7e04c9298.html"];
+  dir_ae6ef14981918a1f9fd474360960f22d [shape=box label="player" URL="dir_ae6ef14981918a1f9fd474360960f22d.html"];
+  dir_04a6babf8a0d92d0a128325d6fc207d8 [shape=box, label="tetraminoes", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_04a6babf8a0d92d0a128325d6fc207d8.html"];
+  }
+  dir_04a6babf8a0d92d0a128325d6fc207d8->dir_462962e8fe55afe381ca33c7e04c9298 [headlabel="1", labeldistance=1.5 headhref="dir_000006_000003.html"];
+  dir_04a6babf8a0d92d0a128325d6fc207d8->dir_ae6ef14981918a1f9fd474360960f22d [headlabel="2", labeldistance=1.5 headhref="dir_000006_000005.html"];
+}

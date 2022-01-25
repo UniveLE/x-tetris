@@ -1,3 +1,10 @@
+/**
+  * @file game.h
+  * @date 18/10/2021
+  * @author Lorenzo Vaccher & Elia Coro'
+  * @brief Libreria per la gestione del gioco X-Tetris
+  */
+
 #ifndef _GAME_H
 #define _GAME_H
 
@@ -9,10 +16,7 @@
  */
 static const int DIFF_BOT_DIFFICULTY = 2500;
 
-/**
- * Nome del file che contiene il logo da stampare
- * per il menu principale.
- */
+/** Nome del file che contiene il logo da stampare per il menu principale. */
 static const char* LOGO_FLE_NAME = "logo.txt";
 
 /**

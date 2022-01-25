@@ -1,0 +1,72 @@
+\hypertarget{game_8h}{}\doxysection{Riferimenti per il file src/game.h}
+\label{game_8h}\index{src/game.h@{src/game.h}}
+
+
+Libreria per la gestione del gioco X-\/\+Tetris.  
+
+
+Questo grafo mostra quali altri file includono direttamente o indirettamente questo file\+:
+% FIG 0
+\doxysubsection*{Strutture dati}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structgame}{game}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Tipi enumerati (enum)}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{game_8h_a6bdf1adf0ba98c2dad6d1e5b19e5a897}{difficulty}} \{ {\bfseries EASY} = 8000
+, {\bfseries MEDIUM} = 6000
+, {\bfseries HARD} = 4000
+ \}
+\item 
+enum \mbox{\hyperlink{game_8h_a115508efe199d81fdc8a4d76700c8e94}{game\+Mode}} \{ \newline
+{\bfseries SINGLE\+\_\+\+PLAYER} = 1
+, {\bfseries MULTI\+\_\+\+PLAYER} = 2
+, {\bfseries PLAYER\+\_\+\+VS\+\_\+\+BOT} = 3
+, {\bfseries PLAYER\+\_\+\+SCORE} = 4
+, \newline
+{\bfseries EXIT} = 5
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{game_8h_ab1f321a2f17fa8ba0f5ab4e2621fd6d6}{start\+Game}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrizione dettagliata}
+Libreria per la gestione del gioco X-\/\+Tetris. 
+
+\begin{DoxyDate}{Data}
+18/10/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Autore}
+Lorenzo Vaccher \& Elia Coro\textquotesingle{} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentazione dei tipi enumerati}
+\mbox{\Hypertarget{game_8h_a6bdf1adf0ba98c2dad6d1e5b19e5a897}\label{game_8h_a6bdf1adf0ba98c2dad6d1e5b19e5a897}} 
+\index{game.h@{game.h}!difficulty@{difficulty}}
+\index{difficulty@{difficulty}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{difficulty}{difficulty}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{game_8h_a6bdf1adf0ba98c2dad6d1e5b19e5a897}{difficulty}}}
+
+Difficotà di gioco. I valori indicano la velocità di caduta del tetramino del giocatore. La velocità del BOT si calcola sottraendo la difficoltà del giocatore con la variabile \char`\"{}\+ADDED\+\_\+\+BOT\+\_\+\+DIFFICULTY\char`\"{} \mbox{\Hypertarget{game_8h_a115508efe199d81fdc8a4d76700c8e94}\label{game_8h_a115508efe199d81fdc8a4d76700c8e94}} 
+\index{game.h@{game.h}!gameMode@{gameMode}}
+\index{gameMode@{gameMode}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{gameMode}{gameMode}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{game_8h_a115508efe199d81fdc8a4d76700c8e94}{game\+Mode}}}
+
+Modalità di gioco. 
+
+\doxysubsection{Documentazione delle funzioni}
+\mbox{\Hypertarget{game_8h_ab1f321a2f17fa8ba0f5ab4e2621fd6d6}\label{game_8h_ab1f321a2f17fa8ba0f5ab4e2621fd6d6}} 
+\index{game.h@{game.h}!startGame@{startGame}}
+\index{startGame@{startGame}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{startGame()}{startGame()}}
+{\footnotesize\ttfamily void start\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Funzione utilizzata per avviare il gioco tetris. 

@@ -1,3 +1,10 @@
+/**
+ * @file player.h
+ * @date 18/10/2021
+ * @author Lorenzo Vaccher & Elia Coro'
+ * @brief Libreria per la gestione dei giocatori.
+ */
+
 #ifndef _PLAYER_H
 #define _PLAYER_H
 

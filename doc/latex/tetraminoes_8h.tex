@@ -1,0 +1,142 @@
+\hypertarget{tetraminoes_8h}{}\doxysection{Riferimenti per il file src/utils/tetraminoes/tetraminoes.h}
+\label{tetraminoes_8h}\index{src/utils/tetraminoes/tetraminoes.h@{src/utils/tetraminoes/tetraminoes.h}}
+
+
+Libreria per la gestione dei tetramini (movimenti, rotazione, ecc).  
+
+
+{\ttfamily \#include \char`\"{}../player/player.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../game.\+h\char`\"{}}\newline
+Grafo delle dipendenze di inclusione per tetraminoes.\+h\+:
+% FIG 0
+\doxysubsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{tetraminoes_8h_a55b97069b24be9f842aed839b48c072f}{can\+Move}} (int direction, \mbox{\hyperlink{structplayer}{player}} $\ast$\mbox{\hyperlink{structplayer}{player}})
+\item 
+int \mbox{\hyperlink{tetraminoes_8h_a306bf492510accaa491885d2f727dc7a}{rotation}} (\mbox{\hyperlink{structplayer}{player}} $\ast$\mbox{\hyperlink{structplayer}{player}})
+\item 
+int \mbox{\hyperlink{tetraminoes_8h_a0c0dfa874cad265924d1b2e731e34cfb}{move}} (int direction, \mbox{\hyperlink{structplayer}{player}} $\ast$\mbox{\hyperlink{structplayer}{player}})
+\item 
+int \mbox{\hyperlink{tetraminoes_8h_ace28bc880e89deb16be674162244f76d}{insert\+Tetromino}} (\mbox{\hyperlink{structplayer}{player}} $\ast$\mbox{\hyperlink{structplayer}{player}}, \mbox{\hyperlink{structgame}{game}} $\ast$\mbox{\hyperlink{structgame}{game}})
+\item 
+int \mbox{\hyperlink{tetraminoes_8h_a268d1b1529d544b036a138535af483cf}{move\+Tetramino}} (char direction, \mbox{\hyperlink{structplayer}{player}} $\ast$\mbox{\hyperlink{structplayer}{player}})
+\item 
+void \mbox{\hyperlink{tetraminoes_8h_a1d352ed0dbbd25ce3f72e4c09669179a}{conversion}} (\mbox{\hyperlink{structplayer}{player}} $\ast$\mbox{\hyperlink{structplayer}{player}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrizione dettagliata}
+Libreria per la gestione dei tetramini (movimenti, rotazione, ecc). 
+
+\begin{DoxyDate}{Data}
+18/10/2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Autore}
+Lorenzo Vaccher \& Elia Coro\textquotesingle{} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentazione delle funzioni}
+\mbox{\Hypertarget{tetraminoes_8h_a55b97069b24be9f842aed839b48c072f}\label{tetraminoes_8h_a55b97069b24be9f842aed839b48c072f}} 
+\index{tetraminoes.h@{tetraminoes.h}!canMove@{canMove}}
+\index{canMove@{canMove}!tetraminoes.h@{tetraminoes.h}}
+\doxysubsubsection{\texorpdfstring{canMove()}{canMove()}}
+{\footnotesize\ttfamily int can\+Move (\begin{DoxyParamCaption}\item[{int}]{direction,  }\item[{\mbox{\hyperlink{structplayer}{player}} $\ast$}]{player }\end{DoxyParamCaption})}
+
+Funzione utilizzata per controllare se un pezzo può muoversi verso una determinata posizione.
+
+
+\begin{DoxyParams}{Parametri}
+{\em direction} & indica la direzione del pezzo da muovere. In particolare\+: 1\+: sinistra 2\+: giù 3\+: destra \\
+\hline
+{\em player} & struct del giocatore\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+true se è consentito il movimento false se non è consentito il movimento 
+\end{DoxyReturn}
+\mbox{\Hypertarget{tetraminoes_8h_a1d352ed0dbbd25ce3f72e4c09669179a}\label{tetraminoes_8h_a1d352ed0dbbd25ce3f72e4c09669179a}} 
+\index{tetraminoes.h@{tetraminoes.h}!conversion@{conversion}}
+\index{conversion@{conversion}!tetraminoes.h@{tetraminoes.h}}
+\doxysubsubsection{\texorpdfstring{conversion()}{conversion()}}
+{\footnotesize\ttfamily void conversion (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structplayer}{player}} $\ast$}]{player }\end{DoxyParamCaption})}
+
+Funzione utilizzata per convertire il carattere del tetramino che l\textquotesingle{}utente sta muovendo (\textquotesingle{}@\textquotesingle{}) con il carattere che indica i tetramini posizionati (\textquotesingle{}\#\textquotesingle{})
+
+
+\begin{DoxyParams}{Parametri}
+{\em player} & struct del giocatore \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tetraminoes_8h_ace28bc880e89deb16be674162244f76d}\label{tetraminoes_8h_ace28bc880e89deb16be674162244f76d}} 
+\index{tetraminoes.h@{tetraminoes.h}!insertTetromino@{insertTetromino}}
+\index{insertTetromino@{insertTetromino}!tetraminoes.h@{tetraminoes.h}}
+\doxysubsubsection{\texorpdfstring{insertTetromino()}{insertTetromino()}}
+{\footnotesize\ttfamily int insert\+Tetromino (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structplayer}{player}} $\ast$}]{player,  }\item[{\mbox{\hyperlink{structgame}{game}} $\ast$}]{game }\end{DoxyParamCaption})}
+
+Questa funzione inserisce il tetramino nel platground
+
+
+\begin{DoxyParams}{Parametri}
+{\em int$\ast$} & indirizzo del playground \\
+\hline
+{\em int$\ast$} & indirizzo dell\textquotesingle{}array contenente il tetramino scelto \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tetraminoes_8h_a0c0dfa874cad265924d1b2e731e34cfb}\label{tetraminoes_8h_a0c0dfa874cad265924d1b2e731e34cfb}} 
+\index{tetraminoes.h@{tetraminoes.h}!move@{move}}
+\index{move@{move}!tetraminoes.h@{tetraminoes.h}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily int move (\begin{DoxyParamCaption}\item[{int}]{direction,  }\item[{\mbox{\hyperlink{structplayer}{player}} $\ast$}]{player }\end{DoxyParamCaption})}
+
+Funzione utilizzata per muovere un tetramino in una determinata direzione.
+
+
+\begin{DoxyParams}{Parametri}
+{\em direction} & indica la direzione del tetramino da muovere. In particolare\+: 1\+: sinistra 2\+: giù 3\+: destra \\
+\hline
+{\em player} & struct del giocatore\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+0 se non può muoversi 1 se si è mosso e può ancora muoversi 2 se si è mosso ma non può più muoversi 
+\end{DoxyReturn}
+\mbox{\Hypertarget{tetraminoes_8h_a268d1b1529d544b036a138535af483cf}\label{tetraminoes_8h_a268d1b1529d544b036a138535af483cf}} 
+\index{tetraminoes.h@{tetraminoes.h}!moveTetramino@{moveTetramino}}
+\index{moveTetramino@{moveTetramino}!tetraminoes.h@{tetraminoes.h}}
+\doxysubsubsection{\texorpdfstring{moveTetramino()}{moveTetramino()}}
+{\footnotesize\ttfamily int move\+Tetramino (\begin{DoxyParamCaption}\item[{char}]{direction,  }\item[{\mbox{\hyperlink{structplayer}{player}} $\ast$}]{player }\end{DoxyParamCaption})}
+
+Funzione utilizzata per muovere il tetramino data una direazione. Questa richiamerà move specificando la direazione.
+
+
+\begin{DoxyParams}{Parametri}
+{\em direction} & direzione del movimento. Parametro espresso sotto forma di char\+:
+\begin{DoxyItemize}
+\item a -\/$>$ sinistra
+\item d -\/$>$ destra
+\item s -\/$>$ basso
+\item spazio -\/$>$ rotazione 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+int stato del movimento. Vedere return della funzione move. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{tetraminoes_8h_a306bf492510accaa491885d2f727dc7a}\label{tetraminoes_8h_a306bf492510accaa491885d2f727dc7a}} 
+\index{tetraminoes.h@{tetraminoes.h}!rotation@{rotation}}
+\index{rotation@{rotation}!tetraminoes.h@{tetraminoes.h}}
+\doxysubsubsection{\texorpdfstring{rotation()}{rotation()}}
+{\footnotesize\ttfamily int rotation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structplayer}{player}} $\ast$}]{player }\end{DoxyParamCaption})}
+
+Funzione utilizzata per ruotare il tetramino all\textquotesingle{}interno di un playground
+
+
+\begin{DoxyParams}{Parametri}
+{\em player} & struct del giocatore\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+1 se è stato ruotato 0 se non è stato possibile ruotare 
+\end{DoxyReturn}
