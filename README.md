@@ -1,10 +1,16 @@
 # X-Tetris
-[Link relazione in Documenti Google](https://docs.google.com/document/d/1TnKNtrtsvZiEISFd6u0V8dcFj1k6fb3T95S-ayjF9LA/edit?usp=sharing)
+[![License](https://img.shields.io/github/license/UniveLE/x-tetris)](https://github.com/UniveLE/x-tetris)
+[![Issues](https://img.shields.io/github/issues/UniveLE/x-tetris)](https://github.com/UniveLE/x-tetris)
+[![Forks](https://img.shields.io/github/forks/UniveLE/x-tetris)](https://github.com/UniveLE/x-tetris)
+[![Stars](https://img.shields.io/github/stars/UniveLE/x-tetris)](https://github.com/UniveLE/x-tetris)
+[![Size](https://img.shields.io/github/languages/code-size/UniveLE/x-tetris)](https://github.com/UniveLE/x-tetris)
+[![Lines](https://img.shields.io/tokei/lines/github/UniveLE/x-tetris)](https://github.com/UniveLE/x-tetris)
 
 ## Partecipanti
 * Lorenzo Vaccher (matricola: 891921)
 * Corò Elia (matricole: 892507)
 ## Relazione
+[Link relazione in Documenti Google](https://docs.google.com/document/d/1TnKNtrtsvZiEISFd6u0V8dcFj1k6fb3T95S-ayjF9LA/edit?usp=sharing)
 ### Introduzione
 Il progetto **X-Tetris** si presenta come una versione rivisitata del classico gioco Tetris. **Il gioco prevede tre modalità** diverse: giocatore singolo, multigiocatore e giocatore contro computer; ciascuna con **tre** diversi **livelli di difficoltà**: semplice, medio e difficile. Ciò che differenzia le tre tipologie di difficoltà è la velocità con cui il tetramino cade.
 
