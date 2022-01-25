@@ -1,0 +1,2 @@
+docker build . -t x_tetris
+docker run -it --rm x_tetris
