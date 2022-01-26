@@ -9,9 +9,12 @@
 ## Partecipanti
 * Lorenzo Vaccher (matricola: 891921)
 * Corò Elia (matricole: 892507)
-## Relazione
+## Link
 [Link relazione in Documenti Google](https://docs.google.com/document/d/1TnKNtrtsvZiEISFd6u0V8dcFj1k6fb3T95S-ayjF9LA/edit?usp=sharing)
-### Introduzione
+
+[Repository Github](https://github.com/UniveLE/x-tetris)
+
+## Introduzione
 Il progetto **X-Tetris** si presenta come una versione rivisitata del classico gioco Tetris. **Il gioco prevede tre modalità** diverse: giocatore singolo, multigiocatore e giocatore contro computer; ciascuna con **tre** diversi **livelli di difficoltà**: semplice, medio e difficile. Ciò che differenzia le tre tipologie di difficoltà è la velocità con cui il tetramino cade.
 
 Durante la fase di sviluppo, **non sono state utilizzate librerie esterne** avanzate (grafica, algoritmi particolari ecc); tutto il codice è stato interamente scritto dai membri del gruppo sopracitati.  
@@ -30,7 +33,7 @@ Gli strumenti e software utilizzati, utili allo sviluppo del videogioco X-tetris
 
 4. **Docker**: A causa dell’utilizzo di diversi sistemi operativi, e dei vari problemi di compatibilità per le diverse librerie utilizzate, è stato deciso di utilizzare Docker e di generare un ambiente virtualizzato che permettesse, indipendentemente dal sistema operativo, di avviare il gioco con le stesse configurazioni utilizzate in fase di sviluppo.
 
-### Problematiche riscontrate
+## Problematiche riscontrate
 * **Rotazione dei tetramini nel campo da gioco**:  
     Risoluzione: la rotazione dei tetramini è stata realizzata mediante un sistema che permette di ottenere la sottomatrice quadrata del pezzo in movimento, di ruotarla e di posizionarla nuovamente nel punto originale.  La problematica principale di questa operazione è stata l'effettiva stesura del codice. Inizialmente si pensava di fare la trasposta della matrice ma tale operazione implicava un problema nel momento in cui si applicava per due volte tale operazione alla sottomatrice, come si può notare dalle immagini sottostanti. 
 
