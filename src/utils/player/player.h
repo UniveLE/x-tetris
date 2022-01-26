@@ -42,9 +42,11 @@ enum Directions_p1 { DIRECTION_P1_ROTATE = ' ',
  * Direzioni dei tetramini riferiti al player 2.
  */
 enum Directions_p2 { DIRECTION_P2_ROTATE = 67, /*arrow up*/
-                     DIRECTION_P2_DOWN = 66,   /*arrow down*/
                      DIRECTION_P2_LEFT = 65,   /*arrow lwft*/
-                     DIRECTION_P2_RIGHT = 68   /*arrow right*/
+                     DIRECTION_P2_RIGHT = 68,   /*arrow right*/
+
+
+                     DIRECTION_P2_DOWN = 66   /*arrow down*/
                     };
 
 void initPlayer(player *player);
