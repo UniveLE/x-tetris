@@ -15,7 +15,7 @@
 
 [Repository Github](https://github.com/UniveLE/x-tetris)
 
-[Doxygen Github Pages](https://univele.github.io/x-tetris/html/index.html)
+[Doxygen Github Pages](https://univele.github.io/x-tetris/docs/html/index.html)
 
 ## Utilizzo
 ### Step 1: Compilazione
