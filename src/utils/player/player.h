@@ -19,7 +19,9 @@ const static char *SCORE_FILE_NAME = "scores.csv";
 * Struttura utilizzata per raccogliere tutte le informazione del giocatore.
 */
 typedef struct {
-  /** punteggio ottenuto secondo determinati criteri illustrati nella relazione */
+  /**  */
+  int moves;
+  /** punteggio ottenuto secondo determinati criteri illustr */
   int score;
   /** nome del giocatore (viene visualizzato a video) */
   char* nickname;
@@ -41,12 +43,10 @@ enum Directions_p1 { DIRECTION_P1_ROTATE = ' ',
 /**
  * Direzioni dei tetramini riferiti al player 2.
  */
-enum Directions_p2 { DIRECTION_P2_ROTATE = 67, /*arrow up*/
-                     DIRECTION_P2_LEFT = 65,   /*arrow lwft*/
-                     DIRECTION_P2_RIGHT = 68,   /*arrow right*/
-
-
-                     DIRECTION_P2_DOWN = 66   /*arrow down*/
+enum Directions_p2 { DIRECTION_P2_ROTATE = 65, /*arrow up*/
+                     DIRECTION_P2_DOWN = 66,   /*arrow down*/
+                     DIRECTION_P2_LEFT = 68,   /*arrow left*/
+                     DIRECTION_P2_RIGHT = 67   /*arrow right*/
                     };
 
 void initPlayer(player *player);
