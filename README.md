@@ -12,7 +12,9 @@
 
 ## Link
 [Link relazione in Documenti Google](https://docs.google.com/document/d/1TnKNtrtsvZiEISFd6u0V8dcFj1k6fb3T95S-ayjF9LA/edit?usp=sharing)
+
 [Repository Github](https://github.com/UniveLE/x-tetris)
+
 [Doxygen Github Pages](https://univele.github.io/x-tetris/html/index.html)
 
 ## Utilizzo
