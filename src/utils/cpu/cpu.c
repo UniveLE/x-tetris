@@ -8,7 +8,7 @@
 #include "../utils.h"
 
 /**
- * Funzione utilizzata nell'algoritmo della cpu per calcolare
+ * Funzione utilizzata dall'algoritmo della cpu per calcolare
  * il punteggio fatto con il tetramino in una determinata posizione.
  * Nel caso in cui il punteggio sia maggiore di quello precedente
  * allora sarà salvata la rotazione, la posizione e il punteggio.
@@ -18,9 +18,9 @@
  * @param player struct del giocatore temporaneo
  * @param position posizione del tetramino
  * @param rotation rotazione del tetramino
- * @param score
- * @param x_score
- * @param r_score
+ * @param score punteggio più alto trovato
+ * @param x_score posizione del tetramino dove il punteggio è più alto
+ * @param r_score rotazione del tetramino dove il punteggio è più alto
  */
 
 void findScore(player* cpu_player, int position, int rotation, int* score, int* x_score, int* r_score) {
@@ -36,7 +36,7 @@ void findScore(player* cpu_player, int position, int rotation, int* score, int* 
 }
 
 /**
- * Funzione utilizzata nell'algoritmo della cpu per calcolare
+ * Funzione utilizzata dall'algoritmo della cpu per calcolare
  * l'altezza di un tetramino quando si trova in una determinata posizione.
  * Nel caso in cui il l'altezza sia minore di quella precedente
  * allora sarà salvata la rotazione, la posizione e l'altezza.
@@ -46,9 +46,9 @@ void findScore(player* cpu_player, int position, int rotation, int* score, int* 
  * @param player struct del giocatore temporaneo
  * @param position posizione del tetramino
  * @param rotation rotazione del tetramino
- * @param height
- * @param x_height
- * @param r_height
+ * @param height altezza più bassa trovata
+ * @param x_height posizione del tetramino dove l'altezza è più bassa
+ * @param r_height rotazione del tetramino dove l'altezza è più bassa
  */
 
 void findHeight(player* cpu_player, int position, int rotation, int* height, int* x_height, int* r_height) {
@@ -102,7 +102,7 @@ void moveTo(player* cpu_player, int position, int push_end) {
 }
 
 /**
- * Funzione ricorsiva che genera tutte le possibili posizioni del tetramino
+ * Funzione ricorsiva che prova tutte le possibili posizioni del tetramino
  * e ritorna la combinazione di parametri in cui il punteggio generato è più alto
  * e quella dove l'altezza è più bassa.
  *
@@ -158,13 +158,11 @@ void cpu(player* cpu_player, int tetramino_width, int position, int tetris_rotat
   if (tetris_rotation == 4)
     return;
 
-  /*printf("position: %d, rotation: %d\n", position, rotation);*/
   cpu(cpu_player, tetramino_width, position, tetris_rotation, score, x_score, r_score, height, x_height, r_height);
 }
 
 /**
- * Funzione di appoggio richiamata nel file principale. TODO: ricordarsi il nome specifico
- *
+ * Funzione di appoggio richiamata nel file principale. 
  *
  * @param player struct del giocatore
  * @param score punteggio più alto trovato,

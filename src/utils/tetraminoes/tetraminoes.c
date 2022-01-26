@@ -26,7 +26,8 @@ char tetraminoes[7][4][4] = {
         {' ', ' ', ' ', ' '},
         {' ', ' ', ' ', ' '},
         {' ', ' ', ' ', '*'},
-        {'*', '*', '*', '*'}},
+        {'*', '*', '*', '*'}
+    },
     {
         {' ', ' ', ' ', ' '},
         {' ', ' ', ' ', ' '},
@@ -70,7 +71,7 @@ void conversion(player* player) {
 
 /**
  * Funzione utilizzata per muovere il tetramino data una
- * direazione. Questa richiamerà move specificando la direazione.
+ * direzione. Questa richiamerà move specificando la direazione.
  * 
  * @param direction direzione del movimento. Parametro espresso
  *                  sotto forma di char:
@@ -163,8 +164,8 @@ int rotation(player* player) {
  *                            3: destra
  * @param player struct del giocatore
  * 
- * @return true se è consentito il movimento
- *         false se non è consentito il movimento
+ * @return 1 se è consentito il movimento
+ *         0 se non è consentito il movimento
  */
 int canMove(int direction, player *player) {
   int i, j;
@@ -209,7 +210,7 @@ int canMove(int direction, player *player) {
   */
 int move(int direction, player *player) {
   if (canMove(direction, player)) {
-    /*È stato creato un ciclo for differente per la direzione dx poichè con il cil
+    /*È stato creato un ciclo for differente per la direzione dx poichè con il ciclo
          realizzato nell'else verrebbe eliminato parte del tetramino poichè il ciclo comincia
          dall'ultima cella in basso a sinistra della matrice*/
     if (direction == 3) {
@@ -249,7 +250,7 @@ int move(int direction, player *player) {
 }
 
 /**
- * Questa funzione inserisce il tetramino nel platground
+ * Questa funzione inserisce il tetramino nel playground
  *
  * @param int* indirizzo del playground
  * @param int* indirizzo dell'array contenente il tetramino scelto

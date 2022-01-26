@@ -250,10 +250,6 @@ void startGame() {
     int difficulty = 0;
     int gameMode = 0;
 
-    /*varibiali utilizzate per il sistema di ricerca dei punteggi*/
-    /*char* query;
-    char choice;*/
-
     /*init game*/
     game.gameMode = gameMode;
     game.gameOver = FALSE;

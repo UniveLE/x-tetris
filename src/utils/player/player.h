@@ -19,8 +19,6 @@ const static char *SCORE_FILE_NAME = "scores.csv";
 * Struttura utilizzata per raccogliere tutte le informazione del giocatore.
 */
 typedef struct {
-  /**  */
-  int moves;
   /** punteggio ottenuto secondo determinati criteri illustr */
   int score;
   /** nome del giocatore (viene visualizzato a video) */

@@ -54,7 +54,7 @@ int gameOver(player* player) {
  * invertire il campo (gli spazi vuoti diventano pieni e viceversa).
  *
  * @param player campo del giocatore da modificare
- * @param lines linee da invertire
+ * @param lines numero di linee da invertire
  */
 void reversePlayground(player* player, int lines) {
   size_t i, j;
@@ -144,6 +144,8 @@ int setScore(player* player) {
  * determinato giocatore, i punteggi non vengono sovrascritti.
  *
  * @param player struct del giocatore.
+ * @param game struct del gioco
+ * 
  */
 void saveScore(player* player, game* game) {
   time_t t = time(NULL);
@@ -156,7 +158,7 @@ void saveScore(player* player, game* game) {
     fclose(scores);
   }
 
-  scores = fopen(SCORE_FILE_NAME, "a"); /*TODO: salvare anche modalità di gioco? Vittorie/sconfitte?*/
+  scores = fopen(SCORE_FILE_NAME, "a");
 
   fprintf(scores, "\n%02d/%02d/%d %02d:%02d,", tm.tm_mday, tm.tm_mon + 1, tm.tm_year + 1900, tm.tm_hour, tm.tm_min); /*inserimento data*/
   fprintf(scores, "%s,", player->nickname);                                                                        /*inserimento nickname*/

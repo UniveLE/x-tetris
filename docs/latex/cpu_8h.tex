@@ -8,9 +8,11 @@ Libreria per la gestione della modalità 1 VS CPU. Questa libreria implementa un
 \doxysubsection*{Funzioni}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{cpu_8h_a2d9403dc0d524bb3b1808a8caeb2f99b}{find\+Score}} (\mbox{\hyperlink{structplayer}{player}} $\ast$cpu\+\_\+player, int position, int \mbox{\hyperlink{tetraminoes_8h_a306bf492510accaa491885d2f727dc7a}{rotation}}, int $\ast$x\+\_\+height, int $\ast$r\+\_\+height)
+\mbox{\Hypertarget{cpu_8h_a2d9403dc0d524bb3b1808a8caeb2f99b}\label{cpu_8h_a2d9403dc0d524bb3b1808a8caeb2f99b}} 
+void {\bfseries find\+Score} (\mbox{\hyperlink{structplayer}{player}} $\ast$cpu\+\_\+player, int position, int \mbox{\hyperlink{tetraminoes_8h_a306bf492510accaa491885d2f727dc7a}{rotation}}, int $\ast$x\+\_\+height, int $\ast$r\+\_\+height)
 \item 
-void \mbox{\hyperlink{cpu_8h_a8d73e3f9068841b17aff9a82111c6db1}{find\+Height}} (\mbox{\hyperlink{structplayer}{player}} $\ast$cpu\+\_\+player, int position, int \mbox{\hyperlink{tetraminoes_8h_a306bf492510accaa491885d2f727dc7a}{rotation}}, int $\ast$x\+\_\+score, int $\ast$r\+\_\+score)
+\mbox{\Hypertarget{cpu_8h_a8d73e3f9068841b17aff9a82111c6db1}\label{cpu_8h_a8d73e3f9068841b17aff9a82111c6db1}} 
+void {\bfseries find\+Height} (\mbox{\hyperlink{structplayer}{player}} $\ast$cpu\+\_\+player, int position, int \mbox{\hyperlink{tetraminoes_8h_a306bf492510accaa491885d2f727dc7a}{rotation}}, int $\ast$x\+\_\+score, int $\ast$r\+\_\+score)
 \item 
 char $\ast$ \mbox{\hyperlink{cpu_8h_a46d22363ee6e8708cf931090205b1244}{move\+To}} (\mbox{\hyperlink{structplayer}{player}} $\ast$cpu\+\_\+player, int position, int push\+\_\+end)
 \item 
@@ -38,7 +40,7 @@ Lorenzo Vaccher \& Elia Coro\textquotesingle{}
 \doxysubsubsection{\texorpdfstring{cpu()}{cpu()}}
 {\footnotesize\ttfamily void cpu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structplayer}{player}} $\ast$}]{cpu\+\_\+player,  }\item[{int}]{tetramino\+\_\+width,  }\item[{int}]{position,  }\item[{int}]{tetris\+\_\+rotation,  }\item[{int $\ast$}]{score,  }\item[{int $\ast$}]{x\+\_\+score,  }\item[{int $\ast$}]{r\+\_\+score,  }\item[{int $\ast$}]{height,  }\item[{int $\ast$}]{x\+\_\+height,  }\item[{int $\ast$}]{r\+\_\+height }\end{DoxyParamCaption})}
 
-Funzione ricorsiva che genera tutte le possibili posizioni del tetramino e ritorna la combinazione di parametri in cui il punteggio generato è più alto e quella dove l\textquotesingle{}altezza è più bassa.
+Funzione ricorsiva che prova tutte le possibili posizioni del tetramino e ritorna la combinazione di parametri in cui il punteggio generato è più alto e quella dove l\textquotesingle{}altezza è più bassa.
 
 
 \begin{DoxyParams}{Parametri}
@@ -63,59 +65,13 @@ Funzione ricorsiva che genera tutte le possibili posizioni del tetramino e ritor
 {\em r\+\_\+height} & rotazione dell\textquotesingle{}altezza più bassa trovata, \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{cpu_8h_a8d73e3f9068841b17aff9a82111c6db1}\label{cpu_8h_a8d73e3f9068841b17aff9a82111c6db1}} 
-\index{cpu.h@{cpu.h}!findHeight@{findHeight}}
-\index{findHeight@{findHeight}!cpu.h@{cpu.h}}
-\doxysubsubsection{\texorpdfstring{findHeight()}{findHeight()}}
-{\footnotesize\ttfamily void find\+Height (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structplayer}{player}} $\ast$}]{cpu\+\_\+player,  }\item[{int}]{position,  }\item[{int}]{rotation,  }\item[{int $\ast$}]{x\+\_\+score,  }\item[{int $\ast$}]{r\+\_\+score }\end{DoxyParamCaption})}
-
-Funzione utilizzata nell\textquotesingle{}algoritmo della cpu per calcolare l\textquotesingle{}altezza di un tetramino quando si trova in una determinata posizione. Nel caso in cui il l\textquotesingle{}altezza sia minore di quella precedente allora sarà salvata la rotazione, la posizione e l\textquotesingle{}altezza. Inizialmente l\textquotesingle{}altezza è 0.
-
-
-\begin{DoxyParams}{Parametri}
-{\em player} & struct del giocatore temporaneo \\
-\hline
-{\em position} & posizione del tetramino \\
-\hline
-{\em rotation} & rotazione del tetramino \\
-\hline
-{\em height} & \\
-\hline
-{\em x\+\_\+height} & \\
-\hline
-{\em r\+\_\+height} & \\
-\hline
-\end{DoxyParams}
-\mbox{\Hypertarget{cpu_8h_a2d9403dc0d524bb3b1808a8caeb2f99b}\label{cpu_8h_a2d9403dc0d524bb3b1808a8caeb2f99b}} 
-\index{cpu.h@{cpu.h}!findScore@{findScore}}
-\index{findScore@{findScore}!cpu.h@{cpu.h}}
-\doxysubsubsection{\texorpdfstring{findScore()}{findScore()}}
-{\footnotesize\ttfamily void find\+Score (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structplayer}{player}} $\ast$}]{cpu\+\_\+player,  }\item[{int}]{position,  }\item[{int}]{rotation,  }\item[{int $\ast$}]{x\+\_\+height,  }\item[{int $\ast$}]{r\+\_\+height }\end{DoxyParamCaption})}
-
-Funzione utilizzata nell\textquotesingle{}algoritmo della cpu per calcolare il punteggio fatto con il tetramino in una determinata posizione. Nel caso in cui il punteggio sia maggiore di quello precedente allora sarà salvata la rotazione, la posizione e il punteggio. Inizialmente il punteggio è 0.
-
-
-\begin{DoxyParams}{Parametri}
-{\em player} & struct del giocatore temporaneo \\
-\hline
-{\em position} & posizione del tetramino \\
-\hline
-{\em rotation} & rotazione del tetramino \\
-\hline
-{\em score} & \\
-\hline
-{\em x\+\_\+score} & \\
-\hline
-{\em r\+\_\+score} & \\
-\hline
-\end{DoxyParams}
 \mbox{\Hypertarget{cpu_8h_a446eefb48d5083a45dcc242d82a66e12}\label{cpu_8h_a446eefb48d5083a45dcc242d82a66e12}} 
 \index{cpu.h@{cpu.h}!moveCPU@{moveCPU}}
 \index{moveCPU@{moveCPU}!cpu.h@{cpu.h}}
 \doxysubsubsection{\texorpdfstring{moveCPU()}{moveCPU()}}
 {\footnotesize\ttfamily void move\+CPU (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structplayer}{player}} $\ast$}]{cpu\+\_\+player,  }\item[{int $\ast$}]{score,  }\item[{int $\ast$}]{x\+\_\+score,  }\item[{int $\ast$}]{r\+\_\+score,  }\item[{int $\ast$}]{height,  }\item[{int $\ast$}]{x\+\_\+height,  }\item[{int $\ast$}]{r\+\_\+height }\end{DoxyParamCaption})}
 
-Funzione di appoggio richiamata nel file principale. TODO\+: ricordarsi il nome specifico
+Funzione di appoggio richiamata nel file principale.
 
 
 \begin{DoxyParams}{Parametri}

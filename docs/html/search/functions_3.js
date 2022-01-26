@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['gameover_73',['gameOver',['../player_8h.html#a78af85c22b6279d4125564649b708ea4',1,'player.c']]],
-  ['getsubmatrix_74',['getSubMatrix',['../matrix_8h.html#a0c135f620219effae7da9a4fe29d5053',1,'matrix.c']]]
+  ['initplayer_71',['initPlayer',['../player_8h.html#a8aa25726a95e088e93c8c717aca818a0',1,'player.c']]],
+  ['inserttetromino_72',['insertTetromino',['../tetraminoes_8h.html#ace28bc880e89deb16be674162244f76d',1,'tetraminoes.c']]]
 ];

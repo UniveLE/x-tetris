@@ -54,7 +54,7 @@ Funzione utilizzata per controllare se un pezzo può muoversi verso una determin
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Restituisce}
-true se è consentito il movimento false se non è consentito il movimento 
+1 se è consentito il movimento 0 se non è consentito il movimento 
 \end{DoxyReturn}
 \mbox{\Hypertarget{tetraminoes_8h_a1d352ed0dbbd25ce3f72e4c09669179a}\label{tetraminoes_8h_a1d352ed0dbbd25ce3f72e4c09669179a}} 
 \index{tetraminoes.h@{tetraminoes.h}!conversion@{conversion}}
@@ -75,7 +75,7 @@ Funzione utilizzata per convertire il carattere del tetramino che l\textquotesin
 \doxysubsubsection{\texorpdfstring{insertTetromino()}{insertTetromino()}}
 {\footnotesize\ttfamily int insert\+Tetromino (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structplayer}{player}} $\ast$}]{player,  }\item[{\mbox{\hyperlink{structgame}{game}} $\ast$}]{game }\end{DoxyParamCaption})}
 
-Questa funzione inserisce il tetramino nel platground
+Questa funzione inserisce il tetramino nel playground
 
 
 \begin{DoxyParams}{Parametri}
@@ -108,7 +108,7 @@ Funzione utilizzata per muovere un tetramino in una determinata direzione.
 \doxysubsubsection{\texorpdfstring{moveTetramino()}{moveTetramino()}}
 {\footnotesize\ttfamily int move\+Tetramino (\begin{DoxyParamCaption}\item[{char}]{direction,  }\item[{\mbox{\hyperlink{structplayer}{player}} $\ast$}]{player }\end{DoxyParamCaption})}
 
-Funzione utilizzata per muovere il tetramino data una direazione. Questa richiamerà move specificando la direazione.
+Funzione utilizzata per muovere il tetramino data una direzione. Questa richiamerà move specificando la direazione.
 
 
 \begin{DoxyParams}{Parametri}

@@ -80,9 +80,11 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Funzioni</h2></td></tr>
-<tr class="memitem:a2d9403dc0d524bb3b1808a8caeb2f99b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cpu_8h.html#a2d9403dc0d524bb3b1808a8caeb2f99b">findScore</a> (<a class="el" href="structplayer.html">player</a> *cpu_player, int position, int <a class="el" href="tetraminoes_8h.html#a306bf492510accaa491885d2f727dc7a">rotation</a>, int *x_height, int *r_height)</td></tr>
+<tr class="memitem:a2d9403dc0d524bb3b1808a8caeb2f99b"><td class="memItemLeft" align="right" valign="top"><a id="a2d9403dc0d524bb3b1808a8caeb2f99b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>findScore</b> (<a class="el" href="structplayer.html">player</a> *cpu_player, int position, int <a class="el" href="tetraminoes_8h.html#a306bf492510accaa491885d2f727dc7a">rotation</a>, int *x_height, int *r_height)</td></tr>
 <tr class="separator:a2d9403dc0d524bb3b1808a8caeb2f99b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d73e3f9068841b17aff9a82111c6db1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cpu_8h.html#a8d73e3f9068841b17aff9a82111c6db1">findHeight</a> (<a class="el" href="structplayer.html">player</a> *cpu_player, int position, int <a class="el" href="tetraminoes_8h.html#a306bf492510accaa491885d2f727dc7a">rotation</a>, int *x_score, int *r_score)</td></tr>
+<tr class="memitem:a8d73e3f9068841b17aff9a82111c6db1"><td class="memItemLeft" align="right" valign="top"><a id="a8d73e3f9068841b17aff9a82111c6db1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>findHeight</b> (<a class="el" href="structplayer.html">player</a> *cpu_player, int position, int <a class="el" href="tetraminoes_8h.html#a306bf492510accaa491885d2f727dc7a">rotation</a>, int *x_score, int *r_score)</td></tr>
 <tr class="separator:a8d73e3f9068841b17aff9a82111c6db1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46d22363ee6e8708cf931090205b1244"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cpu_8h.html#a46d22363ee6e8708cf931090205b1244">moveTo</a> (<a class="el" href="structplayer.html">player</a> *cpu_player, int position, int push_end)</td></tr>
 <tr class="separator:a46d22363ee6e8708cf931090205b1244"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -169,7 +171,7 @@ Funzioni</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Funzione ricorsiva che genera tutte le possibili posizioni del tetramino e ritorna la combinazione di parametri in cui il punteggio generato è più alto e quella dove l'altezza è più bassa.</p>
+<p>Funzione ricorsiva che prova tutte le possibili posizioni del tetramino e ritorna la combinazione di parametri in cui il punteggio generato è più alto e quella dove l'altezza è più bassa.</p>
 <dl class="params"><dt>Parametri</dt><dd>
   <table class="params">
     <tr><td class="paramname">player</td><td>struct del giocatore </td></tr>
@@ -182,122 +184,6 @@ Funzioni</h2></td></tr>
     <tr><td class="paramname">height</td><td>altezza più bassa trovata, </td></tr>
     <tr><td class="paramname">x_height</td><td>posizione dell'altezza più bassa trovata, </td></tr>
     <tr><td class="paramname">r_height</td><td>rotazione dell'altezza più bassa trovata, </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a8d73e3f9068841b17aff9a82111c6db1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8d73e3f9068841b17aff9a82111c6db1">&#9670;&nbsp;</a></span>findHeight()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void findHeight </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structplayer.html">player</a> *&#160;</td>
-          <td class="paramname"><em>cpu_player</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>position</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>rotation</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>x_score</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>r_score</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Funzione utilizzata nell'algoritmo della cpu per calcolare l'altezza di un tetramino quando si trova in una determinata posizione. Nel caso in cui il l'altezza sia minore di quella precedente allora sarà salvata la rotazione, la posizione e l'altezza. Inizialmente l'altezza è 0.</p>
-<dl class="params"><dt>Parametri</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">player</td><td>struct del giocatore temporaneo </td></tr>
-    <tr><td class="paramname">position</td><td>posizione del tetramino </td></tr>
-    <tr><td class="paramname">rotation</td><td>rotazione del tetramino </td></tr>
-    <tr><td class="paramname">height</td><td></td></tr>
-    <tr><td class="paramname">x_height</td><td></td></tr>
-    <tr><td class="paramname">r_height</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a2d9403dc0d524bb3b1808a8caeb2f99b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2d9403dc0d524bb3b1808a8caeb2f99b">&#9670;&nbsp;</a></span>findScore()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void findScore </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structplayer.html">player</a> *&#160;</td>
-          <td class="paramname"><em>cpu_player</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>position</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>rotation</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>x_height</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>r_height</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Funzione utilizzata nell'algoritmo della cpu per calcolare il punteggio fatto con il tetramino in una determinata posizione. Nel caso in cui il punteggio sia maggiore di quello precedente allora sarà salvata la rotazione, la posizione e il punteggio. Inizialmente il punteggio è 0.</p>
-<dl class="params"><dt>Parametri</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">player</td><td>struct del giocatore temporaneo </td></tr>
-    <tr><td class="paramname">position</td><td>posizione del tetramino </td></tr>
-    <tr><td class="paramname">rotation</td><td>rotazione del tetramino </td></tr>
-    <tr><td class="paramname">score</td><td></td></tr>
-    <tr><td class="paramname">x_score</td><td></td></tr>
-    <tr><td class="paramname">r_score</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -359,7 +245,7 @@ Funzioni</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Funzione di appoggio richiamata nel file principale. TODO: ricordarsi il nome specifico</p>
+<p>Funzione di appoggio richiamata nel file principale.</p>
 <dl class="params"><dt>Parametri</dt><dd>
   <table class="params">
     <tr><td class="paramname">player</td><td>struct del giocatore </td></tr>

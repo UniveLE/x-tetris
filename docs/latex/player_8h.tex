@@ -24,10 +24,10 @@ enum \mbox{\hyperlink{player_8h_a72831687227b0db6b2d54f351acb7cd3}{Directions\+\
 , {\bfseries DIRECTION\+\_\+\+P1\+\_\+\+RIGHT} = \textquotesingle{}d\textquotesingle{}
  \}
 \item 
-enum \mbox{\hyperlink{player_8h_a49afcaac4a392b22ea83fbd2eb6f7674}{Directions\+\_\+p2}} \{ {\bfseries DIRECTION\+\_\+\+P2\+\_\+\+ROTATE} = 67
+enum \mbox{\hyperlink{player_8h_a49afcaac4a392b22ea83fbd2eb6f7674}{Directions\+\_\+p2}} \{ {\bfseries DIRECTION\+\_\+\+P2\+\_\+\+ROTATE} = 65
 , {\bfseries DIRECTION\+\_\+\+P2\+\_\+\+DOWN} = 66
-, {\bfseries DIRECTION\+\_\+\+P2\+\_\+\+LEFT} = 65
-, {\bfseries DIRECTION\+\_\+\+P2\+\_\+\+RIGHT} = 68
+, {\bfseries DIRECTION\+\_\+\+P2\+\_\+\+LEFT} = 68
+, {\bfseries DIRECTION\+\_\+\+P2\+\_\+\+RIGHT} = 67
  \}
 \end{DoxyCompactItemize}
 \doxysubsection*{Funzioni}
@@ -164,7 +164,7 @@ Funzione utilizzata nel multigiocatore quando un player effettua 3 o più punti.
 \begin{DoxyParams}{Parametri}
 {\em player} & campo del giocatore da modificare \\
 \hline
-{\em lines} & linee da invertire \\
+{\em lines} & numero di linee da invertire \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{player_8h_a14f2e45a661d4c8956be370067450a00}\label{player_8h_a14f2e45a661d4c8956be370067450a00}} 
@@ -178,6 +178,8 @@ Funzione utilizzata per salvare il punteggio del giocatore nel file scores.\+svg
 
 \begin{DoxyParams}{Parametri}
 {\em player} & struct del giocatore. \\
+\hline
+{\em game} & struct del gioco \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{player_8h_a0e2239b2305f3bc2705f94cafa273157}\label{player_8h_a0e2239b2305f3bc2705f94cafa273157}} 
