@@ -19,9 +19,9 @@
 
 ## Utilizzo
 ### Step 1: Compilazione
- Per compilare il gioco X-Tetris è sufficiente digitare, tramite il terminale, nella directory principale `make`. Facendo così si andrà a generare l'eseguibile "tetris"
+ Per compilare il gioco X-Tetris è sufficiente digitare, tramite il terminale, nella directory principale `make`. Facendo così si andrà a generare l'eseguibile "tetris".
 ### Step 2: Esecuzione
- Per eseguire il programma basterà digitare nel terminale `./tetris`
+ Per eseguire il programma basterà digitare nel terminale `./tetris`.
 
 ## Introduzione
 Il progetto **X-Tetris** si presenta come una versione rivisitata del classico gioco Tetris. **Il gioco prevede tre modalità** diverse: giocatore singolo, multigiocatore e giocatore contro computer; ciascuna con **tre** diversi **livelli di difficoltà**: semplice, medio e difficile. Ciò che differenzia le tre tipologie di difficoltà è la velocità con cui il tetramino cade.
