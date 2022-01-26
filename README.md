@@ -7,6 +7,7 @@
 [![Lines](https://img.shields.io/tokei/lines/github/UniveLE/x-tetris)](https://github.com/UniveLE/x-tetris)
 
 ## Partecipanti
+**Numero del gruppo: 007**
 * Lorenzo Vaccher (matricola: 891921)
 * Corò Elia (matricole: 892507)
 
