@@ -79,20 +79,71 @@ $(function() {
 Funzioni</h2></td></tr>
 <tr class="memitem:a9d7e8af417b6d543da691e9c0e2f6f9f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8h.html#a9d7e8af417b6d543da691e9c0e2f6f9f">clearScreen</a> ()</td></tr>
 <tr class="separator:a9d7e8af417b6d543da691e9c0e2f6f9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae47413fd6b697ad746094e1939a29bee"><td class="memItemLeft" align="right" valign="top"><a id="ae47413fd6b697ad746094e1939a29bee"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setupIO</b> ()</td></tr>
+<tr class="memitem:ae47413fd6b697ad746094e1939a29bee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8h.html#ae47413fd6b697ad746094e1939a29bee">setupIO</a> ()</td></tr>
 <tr class="separator:ae47413fd6b697ad746094e1939a29bee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0333b3127543603b5264e8e82707b6e5"><td class="memItemLeft" align="right" valign="top"><a id="a0333b3127543603b5264e8e82707b6e5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>cleanupIO</b> ()</td></tr>
+<tr class="memitem:a0333b3127543603b5264e8e82707b6e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8h.html#a0333b3127543603b5264e8e82707b6e5">cleanupIO</a> ()</td></tr>
 <tr class="separator:a0333b3127543603b5264e8e82707b6e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aecbcd6b35e0c4d8fad395f147c27b1f4"><td class="memItemLeft" align="right" valign="top"><a id="aecbcd6b35e0c4d8fad395f147c27b1f4"></a>
-char *&#160;</td><td class="memItemRight" valign="bottom"><b>alignText</b> (char *text, int total_size)</td></tr>
+<tr class="memitem:aecbcd6b35e0c4d8fad395f147c27b1f4"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8h.html#aecbcd6b35e0c4d8fad395f147c27b1f4">alignText</a> (char *text, int total_size)</td></tr>
 <tr class="separator:aecbcd6b35e0c4d8fad395f147c27b1f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descrizione dettagliata</h2>
 <div class="textblock"><dl class="section date"><dt>Data</dt><dd>18/10/2021 </dd></dl>
 <dl class="section author"><dt>Autore</dt><dd>Lorenzo Vaccher &amp; Elia Coro' </dd></dl>
 </div><h2 class="groupheader">Documentazione delle funzioni</h2>
+<a id="aecbcd6b35e0c4d8fad395f147c27b1f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecbcd6b35e0c4d8fad395f147c27b1f4">&#9670;&nbsp;</a></span>alignText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* alignText </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>total_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Funzione utilizzata per allineare il testo al centro.</p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>testo da allineare </td></tr>
+    <tr><td class="paramname">total_size</td><td>lunghezza totale </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0333b3127543603b5264e8e82707b6e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0333b3127543603b5264e8e82707b6e5">&#9670;&nbsp;</a></span>cleanupIO()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cleanupIO </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Funzione utilizzata per resettare le impostazioni del terminale. </p>
+
+</div>
+</div>
 <a id="a9d7e8af417b6d543da691e9c0e2f6f9f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9d7e8af417b6d543da691e9c0e2f6f9f">&#9670;&nbsp;</a></span>clearScreen()</h2>
 
@@ -108,6 +159,24 @@ char *&#160;</td><td class="memItemRight" valign="bottom"><b>alignText</b> (char
       </table>
 </div><div class="memdoc">
 <p>Funzione utilizzata per pulire il terminale. </p>
+
+</div>
+</div>
+<a id="ae47413fd6b697ad746094e1939a29bee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae47413fd6b697ad746094e1939a29bee">&#9670;&nbsp;</a></span>setupIO()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setupIO </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Funzione utilizzata per configurare il terminale. In questo modo l'utente è in grado di inviare in input dati senza bloccare l'esecuzione del programma. </p>
 
 </div>
 </div>

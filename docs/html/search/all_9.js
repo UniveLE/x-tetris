@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['tetraminoes_2eh_38',['tetraminoes.h',['../tetraminoes_8h.html',1,'']]]
+  ['reverseplayground_38',['reversePlayground',['../player_8h.html#a12b0d1f1f77124e08d6da111ed125ad9',1,'player.c']]],
+  ['rotatematrix_39',['rotateMatrix',['../matrix_8h.html#a4120e7f39fbfaabf1585799077424544',1,'matrix.c']]],
+  ['rotation_40',['rotation',['../tetraminoes_8h.html#a306bf492510accaa491885d2f727dc7a',1,'tetraminoes.c']]]
 ];

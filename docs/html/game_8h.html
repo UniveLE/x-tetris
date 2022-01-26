@@ -77,7 +77,13 @@ $(function() {
 
 <p>Libreria per la gestione del gioco X-Tetris.  
 <a href="#details">Continua...</a></p>
-<div class="textblock"><div class="dynheader">
+<div class="textblock"><code>#include &quot;<a class="el" href="player_8h_source.html">./utils/player/player.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Grafo delle dipendenze di inclusione per game.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="game_8h__incl.png" border="0" usemap="#asrc_2game_8h" alt=""/></div>
+</div>
+</div><div class="textblock"><div class="dynheader">
 Questo grafo mostra quali altri file includono direttamente o indirettamente questo file:</div>
 <div class="dyncontent">
 <div class="center"><img src="game_8h__dep__incl.png" border="0" usemap="#asrc_2game_8hdep" alt=""/></div>
@@ -112,6 +118,14 @@ Tipi enumerati (enum)</h2></td></tr>
 Funzioni</h2></td></tr>
 <tr class="memitem:ab1f321a2f17fa8ba0f5ab4e2621fd6d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="game_8h.html#ab1f321a2f17fa8ba0f5ab4e2621fd6d6">startGame</a> ()</td></tr>
 <tr class="separator:ab1f321a2f17fa8ba0f5ab4e2621fd6d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72e5824184242940d6c07eda18d79a35"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="game_8h.html#a72e5824184242940d6c07eda18d79a35">conclusion</a> (char *winnerPlayer)</td></tr>
+<tr class="separator:a72e5824184242940d6c07eda18d79a35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dadadf268b456e3d328c3e234d91b16"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="game_8h.html#a7dadadf268b456e3d328c3e234d91b16">step</a> (<a class="el" href="structplayer.html">player</a> *main_player, <a class="el" href="structplayer.html">player</a> *opponent_player, <a class="el" href="structgame.html">game</a> *<a class="el" href="structgame.html">game</a>)</td></tr>
+<tr class="separator:a7dadadf268b456e3d328c3e234d91b16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a008ff0f5c3acb78497a789c529364eb5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="game_8h.html#a008ff0f5c3acb78497a789c529364eb5">cpuMultiPlayer</a> (<a class="el" href="structplayer.html">player</a> *player1, <a class="el" href="structgame.html">game</a> *<a class="el" href="structgame.html">game</a>)</td></tr>
+<tr class="separator:a008ff0f5c3acb78497a789c529364eb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d058c2888b9ca018a820607ca7d1b7a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="game_8h.html#a2d058c2888b9ca018a820607ca7d1b7a">singleMultiPlayer</a> (<a class="el" href="structplayer.html">player</a> *player1, <a class="el" href="structplayer.html">player</a> *player2, <a class="el" href="structgame.html">game</a> *<a class="el" href="structgame.html">game</a>)</td></tr>
+<tr class="separator:a2d058c2888b9ca018a820607ca7d1b7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descrizione dettagliata</h2>
 <div class="textblock"><p>Libreria per la gestione del gioco X-Tetris. </p>
@@ -149,6 +163,110 @@ Funzioni</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Documentazione delle funzioni</h2>
+<a id="a72e5824184242940d6c07eda18d79a35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72e5824184242940d6c07eda18d79a35">&#9670;&nbsp;</a></span>conclusion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void conclusion </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>winnerPlayer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Funzione utilizzata per stampare la scritta che indica il giocatore che ha vinto.</p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">winnerPlayer</td><td>nome del giocatore che ha vinto </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a008ff0f5c3acb78497a789c529364eb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a008ff0f5c3acb78497a789c529364eb5">&#9670;&nbsp;</a></span>cpuMultiPlayer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cpuMultiPlayer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structplayer.html">player</a> *&#160;</td>
+          <td class="paramname"><em>player1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgame.html">game</a> *&#160;</td>
+          <td class="paramname"><em>game</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Funzione utilizzata per gestire la modalità di gioco 1 VS CPU.</p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">player1</td><td>struttura del giocatore </td></tr>
+    <tr><td class="paramname">game</td><td>struttura relativa al gioco </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2d058c2888b9ca018a820607ca7d1b7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d058c2888b9ca018a820607ca7d1b7a">&#9670;&nbsp;</a></span>singleMultiPlayer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void singleMultiPlayer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structplayer.html">player</a> *&#160;</td>
+          <td class="paramname"><em>player1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structplayer.html">player</a> *&#160;</td>
+          <td class="paramname"><em>player2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgame.html">game</a> *&#160;</td>
+          <td class="paramname"><em>game</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Funzione utilizzata per gestire la modalità di gioco single player e 1 VS 1.</p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">player1</td><td>struttura del giocatore 1 </td></tr>
+    <tr><td class="paramname">player2</td><td>struttura del giocatore 2 </td></tr>
+    <tr><td class="paramname">game</td><td>struttura relativa al gioco </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ab1f321a2f17fa8ba0f5ab4e2621fd6d6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab1f321a2f17fa8ba0f5ab4e2621fd6d6">&#9670;&nbsp;</a></span>startGame()</h2>
 
@@ -164,6 +282,49 @@ Funzioni</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Funzione utilizzata per avviare il gioco tetris. </p>
+
+</div>
+</div>
+<a id="a7dadadf268b456e3d328c3e234d91b16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7dadadf268b456e3d328c3e234d91b16">&#9670;&nbsp;</a></span>step()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int step </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structplayer.html">player</a> *&#160;</td>
+          <td class="paramname"><em>main_player</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structplayer.html">player</a> *&#160;</td>
+          <td class="paramname"><em>opponent_player</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgame.html">game</a> *&#160;</td>
+          <td class="paramname"><em>game</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Funzione invocata quando il tetramino non può più muoversi verso il basso. Questa funzione verifica anche il gameover del giocatore passato in input.</p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">main_player</td><td>giocatore principale da verificare </td></tr>
+    <tr><td class="paramname">opponent_player</td><td>giocatore avversario </td></tr>
+    <tr><td class="paramname">game</td><td>gioco, utilizzato per le statistiche riguardo i tetramini. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['reverseplayground_69',['reversePlayground',['../player_8h.html#a12b0d1f1f77124e08d6da111ed125ad9',1,'player.c']]],
-  ['rotatematrix_70',['rotateMatrix',['../matrix_8h.html#a4120e7f39fbfaabf1585799077424544',1,'matrix.c']]],
-  ['rotation_71',['rotation',['../tetraminoes_8h.html#a306bf492510accaa491885d2f727dc7a',1,'tetraminoes.c']]]
+  ['printlogos_83',['printLogos',['../menu_8h.html#a0fc2a1e2cd033971a73251d8d70beaa6',1,'menu.c']]],
+  ['printnickname_84',['printNickname',['../player_8h.html#a2716064bd86d26a77430285bf0fc5652',1,'player.c']]],
+  ['printplayground_85',['printPlayground',['../player_8h.html#a6bc5883e80d99ea5ceb280e346e31e78',1,'player.c']]],
+  ['printscores_86',['printScores',['../player_8h.html#a63ec27ed4598a308e4d0c4435ce77fb0',1,'player.c']]]
 ];

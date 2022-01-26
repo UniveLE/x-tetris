@@ -5,8 +5,11 @@
 Libreria per la gestione del gioco X-\/\+Tetris.  
 
 
-Questo grafo mostra quali altri file includono direttamente o indirettamente questo file\+:
+{\ttfamily \#include \char`\"{}./utils/player/player.\+h\char`\"{}}\newline
+Grafo delle dipendenze di inclusione per game.\+h\+:
 % FIG 0
+Questo grafo mostra quali altri file includono direttamente o indirettamente questo file\+:
+% FIG 1
 \doxysubsection*{Strutture dati}
 \begin{DoxyCompactItemize}
 \item 
@@ -33,6 +36,14 @@ enum \mbox{\hyperlink{game_8h_a115508efe199d81fdc8a4d76700c8e94}{game\+Mode}} \{
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{game_8h_ab1f321a2f17fa8ba0f5ab4e2621fd6d6}{start\+Game}} ()
+\item 
+void \mbox{\hyperlink{game_8h_a72e5824184242940d6c07eda18d79a35}{conclusion}} (char $\ast$winner\+Player)
+\item 
+int \mbox{\hyperlink{game_8h_a7dadadf268b456e3d328c3e234d91b16}{step}} (\mbox{\hyperlink{structplayer}{player}} $\ast$main\+\_\+player, \mbox{\hyperlink{structplayer}{player}} $\ast$opponent\+\_\+player, \mbox{\hyperlink{structgame}{game}} $\ast$\mbox{\hyperlink{structgame}{game}})
+\item 
+void \mbox{\hyperlink{game_8h_a008ff0f5c3acb78497a789c529364eb5}{cpu\+Multi\+Player}} (\mbox{\hyperlink{structplayer}{player}} $\ast$player1, \mbox{\hyperlink{structgame}{game}} $\ast$\mbox{\hyperlink{structgame}{game}})
+\item 
+void \mbox{\hyperlink{game_8h_a2d058c2888b9ca018a820607ca7d1b7a}{single\+Multi\+Player}} (\mbox{\hyperlink{structplayer}{player}} $\ast$player1, \mbox{\hyperlink{structplayer}{player}} $\ast$player2, \mbox{\hyperlink{structgame}{game}} $\ast$\mbox{\hyperlink{structgame}{game}})
 \end{DoxyCompactItemize}
 
 
@@ -63,10 +74,71 @@ Difficotà di gioco. I valori indicano la velocità di caduta del tetramino del 
 Modalità di gioco. 
 
 \doxysubsection{Documentazione delle funzioni}
+\mbox{\Hypertarget{game_8h_a72e5824184242940d6c07eda18d79a35}\label{game_8h_a72e5824184242940d6c07eda18d79a35}} 
+\index{game.h@{game.h}!conclusion@{conclusion}}
+\index{conclusion@{conclusion}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{conclusion()}{conclusion()}}
+{\footnotesize\ttfamily void conclusion (\begin{DoxyParamCaption}\item[{char $\ast$}]{winner\+Player }\end{DoxyParamCaption})}
+
+Funzione utilizzata per stampare la scritta che indica il giocatore che ha vinto.
+
+
+\begin{DoxyParams}{Parametri}
+{\em winner\+Player} & nome del giocatore che ha vinto \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{game_8h_a008ff0f5c3acb78497a789c529364eb5}\label{game_8h_a008ff0f5c3acb78497a789c529364eb5}} 
+\index{game.h@{game.h}!cpuMultiPlayer@{cpuMultiPlayer}}
+\index{cpuMultiPlayer@{cpuMultiPlayer}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{cpuMultiPlayer()}{cpuMultiPlayer()}}
+{\footnotesize\ttfamily void cpu\+Multi\+Player (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structplayer}{player}} $\ast$}]{player1,  }\item[{\mbox{\hyperlink{structgame}{game}} $\ast$}]{game }\end{DoxyParamCaption})}
+
+Funzione utilizzata per gestire la modalità di gioco 1 VS CPU.
+
+
+\begin{DoxyParams}{Parametri}
+{\em player1} & struttura del giocatore \\
+\hline
+{\em game} & struttura relativa al gioco \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{game_8h_a2d058c2888b9ca018a820607ca7d1b7a}\label{game_8h_a2d058c2888b9ca018a820607ca7d1b7a}} 
+\index{game.h@{game.h}!singleMultiPlayer@{singleMultiPlayer}}
+\index{singleMultiPlayer@{singleMultiPlayer}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{singleMultiPlayer()}{singleMultiPlayer()}}
+{\footnotesize\ttfamily void single\+Multi\+Player (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structplayer}{player}} $\ast$}]{player1,  }\item[{\mbox{\hyperlink{structplayer}{player}} $\ast$}]{player2,  }\item[{\mbox{\hyperlink{structgame}{game}} $\ast$}]{game }\end{DoxyParamCaption})}
+
+Funzione utilizzata per gestire la modalità di gioco single player e 1 VS 1.
+
+
+\begin{DoxyParams}{Parametri}
+{\em player1} & struttura del giocatore 1 \\
+\hline
+{\em player2} & struttura del giocatore 2 \\
+\hline
+{\em game} & struttura relativa al gioco \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{game_8h_ab1f321a2f17fa8ba0f5ab4e2621fd6d6}\label{game_8h_ab1f321a2f17fa8ba0f5ab4e2621fd6d6}} 
 \index{game.h@{game.h}!startGame@{startGame}}
 \index{startGame@{startGame}!game.h@{game.h}}
 \doxysubsubsection{\texorpdfstring{startGame()}{startGame()}}
 {\footnotesize\ttfamily void start\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Funzione utilizzata per avviare il gioco tetris. 
+Funzione utilizzata per avviare il gioco tetris. \mbox{\Hypertarget{game_8h_a7dadadf268b456e3d328c3e234d91b16}\label{game_8h_a7dadadf268b456e3d328c3e234d91b16}} 
+\index{game.h@{game.h}!step@{step}}
+\index{step@{step}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{step()}{step()}}
+{\footnotesize\ttfamily int step (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structplayer}{player}} $\ast$}]{main\+\_\+player,  }\item[{\mbox{\hyperlink{structplayer}{player}} $\ast$}]{opponent\+\_\+player,  }\item[{\mbox{\hyperlink{structgame}{game}} $\ast$}]{game }\end{DoxyParamCaption})}
+
+Funzione invocata quando il tetramino non può più muoversi verso il basso. Questa funzione verifica anche il gameover del giocatore passato in input.
+
+
+\begin{DoxyParams}{Parametri}
+{\em main\+\_\+player} & giocatore principale da verificare \\
+\hline
+{\em opponent\+\_\+player} & giocatore avversario \\
+\hline
+{\em game} & gioco, utilizzato per le statistiche riguardo i tetramini. \\
+\hline
+\end{DoxyParams}

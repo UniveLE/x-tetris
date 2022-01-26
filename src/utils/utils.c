@@ -13,6 +13,12 @@ void clearScreen() {
   printf("\e[1;1H\e[2J");
 }
 
+/**
+* Funzione utilizzata per allineare il testo al centro.
+*
+* @param text testo da allineare
+* @param total_size lunghezza totale
+*/
 char* alignText(char* text, int total_size) {
   char* new_text = (char*)malloc(sizeof(char) * total_size);
   size_t i, index = 0, size = strlen(text);
@@ -29,6 +35,11 @@ char* alignText(char* text, int total_size) {
   return new_text;
 }
 
+/**
+* Funzione utilizzata per configurare il terminale.
+* In questo modo l'utente è in grado di inviare in input dati 
+* senza bloccare l'esecuzione del programma.
+*/
 void setupIO() {
   /*       
       The termios functions describe a general terminal interface that
@@ -51,6 +62,10 @@ void setupIO() {
   fcntl(fd, F_SETFL, fcntl(fd, F_GETFL, 0) | O_NONBLOCK);
 }
 
+/**
+* Funzione utilizzata per resettare le impostazioni del terminale.
+* 
+*/
 void cleanupIO() {
   tcsetattr(fileno(stdin), TCSANOW, &save);
 }

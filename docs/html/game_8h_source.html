@@ -74,42 +74,58 @@ $(function() {
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef _GAME_H</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define _GAME_H</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> DIFF_BOT_DIFFICULTY = 2500;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* LOGO_FLE_NAME = <span class="stringliteral">&quot;logo.txt&quot;</span>;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* SCORE_LOGO_FLE_NAME = <span class="stringliteral">&quot;scores_logo.txt&quot;</span>;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="game_8h.html#a6bdf1adf0ba98c2dad6d1e5b19e5a897">   34</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  EASY = 8000,</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  MEDIUM = 6000,</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  HARD = 4000</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;} <a class="code" href="game_8h.html#a6bdf1adf0ba98c2dad6d1e5b19e5a897">difficulty</a>;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="game_8h.html#a115508efe199d81fdc8a4d76700c8e94">   43</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  SINGLE_PLAYER = 1,</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  MULTI_PLAYER = 2,</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  PLAYER_VS_BOT = 3,</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  PLAYER_SCORE = 4,</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  EXIT = 5</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;} <a class="code" href="game_8h.html#a115508efe199d81fdc8a4d76700c8e94">gameMode</a>;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="structgame.html">   54</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <a class="code" href="game_8h.html#a115508efe199d81fdc8a4d76700c8e94">gameMode</a> <a class="code" href="game_8h.html#a115508efe199d81fdc8a4d76700c8e94">gameMode</a>;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="player_8h.html#a78af85c22b6279d4125564649b708ea4">gameOver</a>;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordtype">int</span> tetraminoesNumber;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordtype">int</span>* tetraminoes; <span class="comment">/*vettore contenente tutti i tetramini da inserire*/</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <a class="code" href="game_8h.html#a6bdf1adf0ba98c2dad6d1e5b19e5a897">difficulty</a> <a class="code" href="game_8h.html#a6bdf1adf0ba98c2dad6d1e5b19e5a897">difficulty</a>;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;} <a class="code" href="structgame.html">game</a>;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keywordtype">void</span> <a class="code" href="game_8h.html#ab1f321a2f17fa8ba0f5ab4e2621fd6d6">startGame</a>();</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="agame_8h_html_a115508efe199d81fdc8a4d76700c8e94"><div class="ttname"><a href="game_8h.html#a115508efe199d81fdc8a4d76700c8e94">gameMode</a></div><div class="ttdeci">gameMode</div><div class="ttdef"><b>Definition:</b> game.h:43</div></div>
-<div class="ttc" id="agame_8h_html_a6bdf1adf0ba98c2dad6d1e5b19e5a897"><div class="ttname"><a href="game_8h.html#a6bdf1adf0ba98c2dad6d1e5b19e5a897">difficulty</a></div><div class="ttdeci">difficulty</div><div class="ttdef"><b>Definition:</b> game.h:34</div></div>
-<div class="ttc" id="agame_8h_html_ab1f321a2f17fa8ba0f5ab4e2621fd6d6"><div class="ttname"><a href="game_8h.html#ab1f321a2f17fa8ba0f5ab4e2621fd6d6">startGame</a></div><div class="ttdeci">void startGame()</div><div class="ttdef"><b>Definition:</b> game.c:225</div></div>
-<div class="ttc" id="aplayer_8h_html_a78af85c22b6279d4125564649b708ea4"><div class="ttname"><a href="player_8h.html#a78af85c22b6279d4125564649b708ea4">gameOver</a></div><div class="ttdeci">int gameOver(player *player)</div><div class="ttdef"><b>Definition:</b> player.c:43</div></div>
-<div class="ttc" id="astructgame_html"><div class="ttname"><a href="structgame.html">game</a></div><div class="ttdef"><b>Definition:</b> game.h:54</div></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="player_8h.html">./utils/player/player.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> DIFF_BOT_DIFFICULTY = 2500;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* LOGO_FLE_NAME = <span class="stringliteral">&quot;logo.txt&quot;</span>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* SCORE_LOGO_FLE_NAME = <span class="stringliteral">&quot;scores_logo.txt&quot;</span>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="game_8h.html#a6bdf1adf0ba98c2dad6d1e5b19e5a897">   36</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  EASY = 8000,</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  MEDIUM = 6000,</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  HARD = 4000</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;} <a class="code" href="game_8h.html#a6bdf1adf0ba98c2dad6d1e5b19e5a897">difficulty</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="game_8h.html#a115508efe199d81fdc8a4d76700c8e94">   45</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  SINGLE_PLAYER = 1,</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  MULTI_PLAYER = 2,</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  PLAYER_VS_BOT = 3,</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  PLAYER_SCORE = 4,</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  EXIT = 5</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;} <a class="code" href="game_8h.html#a115508efe199d81fdc8a4d76700c8e94">gameMode</a>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="structgame.html">   56</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="structgame.html#ae048110afda7a8b1f225976b03226e56">   58</a></span>&#160;  <a class="code" href="game_8h.html#a115508efe199d81fdc8a4d76700c8e94">gameMode</a> <a class="code" href="structgame.html#ae048110afda7a8b1f225976b03226e56">gameMode</a>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="structgame.html#aecf8239c33d27e515820aceffe96347d">   60</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="structgame.html#aecf8239c33d27e515820aceffe96347d">gameOver</a>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="structgame.html#a2a7b790859ae30258dfe1322859644fc">   62</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="structgame.html#a2a7b790859ae30258dfe1322859644fc">tetraminoesNumber</a>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="structgame.html#af2ecfb4e962a13aa86ab060b66edf5cd">   64</a></span>&#160;  <span class="keywordtype">int</span>* <a class="code" href="structgame.html#af2ecfb4e962a13aa86ab060b66edf5cd">tetraminoes</a>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="structgame.html#a612303915f1144bbc3b4020036ed2708">   66</a></span>&#160;  <a class="code" href="game_8h.html#a6bdf1adf0ba98c2dad6d1e5b19e5a897">difficulty</a> <a class="code" href="structgame.html#a612303915f1144bbc3b4020036ed2708">difficulty</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;} <a class="code" href="structgame.html">game</a>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keywordtype">void</span> <a class="code" href="game_8h.html#ab1f321a2f17fa8ba0f5ab4e2621fd6d6">startGame</a>();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keywordtype">void</span> <a class="code" href="game_8h.html#a72e5824184242940d6c07eda18d79a35">conclusion</a>(<span class="keywordtype">char</span> *winnerPlayer);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keywordtype">int</span> <a class="code" href="game_8h.html#a7dadadf268b456e3d328c3e234d91b16">step</a>(<a class="code" href="structplayer.html">player</a> *main_player, <a class="code" href="structplayer.html">player</a> *opponent_player, <a class="code" href="structgame.html">game</a> *<a class="code" href="structgame.html">game</a>);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keywordtype">void</span> <a class="code" href="game_8h.html#a008ff0f5c3acb78497a789c529364eb5">cpuMultiPlayer</a>(<a class="code" href="structplayer.html">player</a> *player1, <a class="code" href="structgame.html">game</a> *<a class="code" href="structgame.html">game</a>);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keywordtype">void</span> <a class="code" href="game_8h.html#a2d058c2888b9ca018a820607ca7d1b7a">singleMultiPlayer</a>(<a class="code" href="structplayer.html">player</a>* player1, <a class="code" href="structplayer.html">player</a>* player2, <a class="code" href="structgame.html">game</a>* <a class="code" href="structgame.html">game</a>);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="agame_8h_html_a008ff0f5c3acb78497a789c529364eb5"><div class="ttname"><a href="game_8h.html#a008ff0f5c3acb78497a789c529364eb5">cpuMultiPlayer</a></div><div class="ttdeci">void cpuMultiPlayer(player *player1, game *game)</div><div class="ttdef"><b>Definition:</b> game.c:84</div></div>
+<div class="ttc" id="agame_8h_html_a115508efe199d81fdc8a4d76700c8e94"><div class="ttname"><a href="game_8h.html#a115508efe199d81fdc8a4d76700c8e94">gameMode</a></div><div class="ttdeci">gameMode</div><div class="ttdef"><b>Definition:</b> game.h:45</div></div>
+<div class="ttc" id="agame_8h_html_a2d058c2888b9ca018a820607ca7d1b7a"><div class="ttname"><a href="game_8h.html#a2d058c2888b9ca018a820607ca7d1b7a">singleMultiPlayer</a></div><div class="ttdeci">void singleMultiPlayer(player *player1, player *player2, game *game)</div><div class="ttdef"><b>Definition:</b> game.c:171</div></div>
+<div class="ttc" id="agame_8h_html_a6bdf1adf0ba98c2dad6d1e5b19e5a897"><div class="ttname"><a href="game_8h.html#a6bdf1adf0ba98c2dad6d1e5b19e5a897">difficulty</a></div><div class="ttdeci">difficulty</div><div class="ttdef"><b>Definition:</b> game.h:36</div></div>
+<div class="ttc" id="agame_8h_html_a72e5824184242940d6c07eda18d79a35"><div class="ttname"><a href="game_8h.html#a72e5824184242940d6c07eda18d79a35">conclusion</a></div><div class="ttdeci">void conclusion(char *winnerPlayer)</div><div class="ttdef"><b>Definition:</b> game.c:23</div></div>
+<div class="ttc" id="agame_8h_html_a7dadadf268b456e3d328c3e234d91b16"><div class="ttname"><a href="game_8h.html#a7dadadf268b456e3d328c3e234d91b16">step</a></div><div class="ttdeci">int step(player *main_player, player *opponent_player, game *game)</div><div class="ttdef"><b>Definition:</b> game.c:51</div></div>
+<div class="ttc" id="agame_8h_html_ab1f321a2f17fa8ba0f5ab4e2621fd6d6"><div class="ttname"><a href="game_8h.html#ab1f321a2f17fa8ba0f5ab4e2621fd6d6">startGame</a></div><div class="ttdeci">void startGame()</div><div class="ttdef"><b>Definition:</b> game.c:245</div></div>
+<div class="ttc" id="aplayer_8h_html"><div class="ttname"><a href="player_8h.html">player.h</a></div><div class="ttdoc">Libreria per la gestione dei giocatori.</div></div>
+<div class="ttc" id="astructgame_html"><div class="ttname"><a href="structgame.html">game</a></div><div class="ttdef"><b>Definition:</b> game.h:56</div></div>
+<div class="ttc" id="astructgame_html_a2a7b790859ae30258dfe1322859644fc"><div class="ttname"><a href="structgame.html#a2a7b790859ae30258dfe1322859644fc">game::tetraminoesNumber</a></div><div class="ttdeci">int tetraminoesNumber</div><div class="ttdef"><b>Definition:</b> game.h:62</div></div>
+<div class="ttc" id="astructgame_html_a612303915f1144bbc3b4020036ed2708"><div class="ttname"><a href="structgame.html#a612303915f1144bbc3b4020036ed2708">game::difficulty</a></div><div class="ttdeci">difficulty difficulty</div><div class="ttdef"><b>Definition:</b> game.h:66</div></div>
+<div class="ttc" id="astructgame_html_ae048110afda7a8b1f225976b03226e56"><div class="ttname"><a href="structgame.html#ae048110afda7a8b1f225976b03226e56">game::gameMode</a></div><div class="ttdeci">gameMode gameMode</div><div class="ttdef"><b>Definition:</b> game.h:58</div></div>
+<div class="ttc" id="astructgame_html_aecf8239c33d27e515820aceffe96347d"><div class="ttname"><a href="structgame.html#aecf8239c33d27e515820aceffe96347d">game::gameOver</a></div><div class="ttdeci">int gameOver</div><div class="ttdef"><b>Definition:</b> game.h:60</div></div>
+<div class="ttc" id="astructgame_html_af2ecfb4e962a13aa86ab060b66edf5cd"><div class="ttname"><a href="structgame.html#af2ecfb4e962a13aa86ab060b66edf5cd">game::tetraminoes</a></div><div class="ttdeci">int * tetraminoes</div><div class="ttdef"><b>Definition:</b> game.h:64</div></div>
+<div class="ttc" id="astructplayer_html"><div class="ttname"><a href="structplayer.html">player</a></div><div class="ttdef"><b>Definition:</b> player.h:21</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

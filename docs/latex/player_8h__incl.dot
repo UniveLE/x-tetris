@@ -6,4 +6,5 @@ digraph "src/utils/player/player.h"
   Node1 [label="src/utils/player/player.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Libreria per la gestione dei giocatori."];
   Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
   Node2 [label="../../game.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$game_8h.html",tooltip="Libreria per la gestione del gioco X-Tetris."];
+  Node2 -> Node1 [color="midnightblue",fontsize="10",style="solid"];
 }

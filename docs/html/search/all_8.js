@@ -1,7 +1,10 @@
 var searchData=
 [
-  ['savescore_34',['saveScore',['../player_8h.html#a14f2e45a661d4c8956be370067450a00',1,'player.c']]],
-  ['setnickname_35',['setNickname',['../player_8h.html#a0e2239b2305f3bc2705f94cafa273157',1,'player.c']]],
-  ['setscore_36',['setScore',['../player_8h.html#a85c58439906c1cf88467f66ba942aef4',1,'player.c']]],
-  ['startgame_37',['startGame',['../game_8h.html#ab1f321a2f17fa8ba0f5ab4e2621fd6d6',1,'game.c']]]
+  ['player_31',['player',['../structplayer.html',1,'']]],
+  ['player_2eh_32',['player.h',['../player_8h.html',1,'']]],
+  ['playground_33',['playground',['../structplayer.html#a4d4e55359c8f08c639cd17853174ab3d',1,'player']]],
+  ['printlogos_34',['printLogos',['../menu_8h.html#a0fc2a1e2cd033971a73251d8d70beaa6',1,'menu.c']]],
+  ['printnickname_35',['printNickname',['../player_8h.html#a2716064bd86d26a77430285bf0fc5652',1,'player.c']]],
+  ['printplayground_36',['printPlayground',['../player_8h.html#a6bc5883e80d99ea5ceb280e346e31e78',1,'player.c']]],
+  ['printscores_37',['printScores',['../player_8h.html#a63ec27ed4598a308e4d0c4435ce77fb0',1,'player.c']]]
 ];

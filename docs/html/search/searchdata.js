@@ -1,11 +1,12 @@
 var indexSectionsWithContent =
 {
-  0: "cdfgimprstu",
+  0: "acdfgimnprstu",
   1: "gp",
   2: "cgmptu",
-  3: "cfgimprs",
-  4: "dg",
-  5: "m"
+  3: "acfgimprs",
+  4: "dgnpst",
+  5: "dg",
+  6: "m"
 };
 
 var indexSectionNames =
@@ -14,8 +15,9 @@ var indexSectionNames =
   1: "classes",
   2: "files",
   3: "functions",
-  4: "enums",
-  5: "pages"
+  4: "variables",
+  5: "enums",
+  6: "pages"
 };
 
 var indexSectionLabels =
@@ -24,7 +26,8 @@ var indexSectionLabels =
   1: "Strutture dati",
   2: "File",
   3: "Funzioni",
-  4: "Tipi enumerati (enum)",
-  5: "Pagine"
+  4: "Variabili",
+  5: "Tipi enumerati (enum)",
+  6: "Pagine"
 };
 

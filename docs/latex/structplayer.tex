@@ -1,24 +1,51 @@
 \hypertarget{structplayer}{}\doxysection{Riferimenti per la struct player}
 \label{structplayer}\index{player@{player}}
+
+
+{\ttfamily \#include $<$player.\+h$>$}
+
 \doxysubsection*{Campi}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{structplayer_a9f985dad195a22d40183f5eaad9b07a5}\label{structplayer_a9f985dad195a22d40183f5eaad9b07a5}} 
-int {\bfseries moves}
+int \mbox{\hyperlink{structplayer_a0effac341657c96528752f808fa23291}{score}}
 \item 
-\mbox{\Hypertarget{structplayer_a0effac341657c96528752f808fa23291}\label{structplayer_a0effac341657c96528752f808fa23291}} 
-int {\bfseries score}
+char $\ast$ \mbox{\hyperlink{structplayer_a61252fcbdca5d1365a90e076501a06f7}{nickname}}
 \item 
-\mbox{\Hypertarget{structplayer_a61252fcbdca5d1365a90e076501a06f7}\label{structplayer_a61252fcbdca5d1365a90e076501a06f7}} 
-char $\ast$ {\bfseries nickname}
+char \mbox{\hyperlink{structplayer_a4d4e55359c8f08c639cd17853174ab3d}{playground}} \mbox{[}19\mbox{]}\mbox{[}10\mbox{]}
 \item 
-\mbox{\Hypertarget{structplayer_a4d4e55359c8f08c639cd17853174ab3d}\label{structplayer_a4d4e55359c8f08c639cd17853174ab3d}} 
-char {\bfseries playground} \mbox{[}19\mbox{]}\mbox{[}10\mbox{]}
-\item 
-\mbox{\Hypertarget{structplayer_a73c9c183def2747cfedee93af46a032f}\label{structplayer_a73c9c183def2747cfedee93af46a032f}} 
-int {\bfseries tetraminoes}
+int \mbox{\hyperlink{structplayer_a73c9c183def2747cfedee93af46a032f}{tetraminoes}}
 \end{DoxyCompactItemize}
 
+
+\doxysubsection{Descrizione dettagliata}
+Struttura utilizzata per raccogliere tutte le informazione del giocatore. 
+
+\doxysubsection{Documentazione dei campi}
+\mbox{\Hypertarget{structplayer_a61252fcbdca5d1365a90e076501a06f7}\label{structplayer_a61252fcbdca5d1365a90e076501a06f7}} 
+\index{player@{player}!nickname@{nickname}}
+\index{nickname@{nickname}!player@{player}}
+\doxysubsubsection{\texorpdfstring{nickname}{nickname}}
+{\footnotesize\ttfamily char$\ast$ player\+::nickname}
+
+nome del giocatore (viene visualizzato a video) \mbox{\Hypertarget{structplayer_a4d4e55359c8f08c639cd17853174ab3d}\label{structplayer_a4d4e55359c8f08c639cd17853174ab3d}} 
+\index{player@{player}!playground@{playground}}
+\index{playground@{playground}!player@{player}}
+\doxysubsubsection{\texorpdfstring{playground}{playground}}
+{\footnotesize\ttfamily char player\+::playground\mbox{[}19\mbox{]}\mbox{[}10\mbox{]}}
+
+campo da gioco \mbox{\Hypertarget{structplayer_a0effac341657c96528752f808fa23291}\label{structplayer_a0effac341657c96528752f808fa23291}} 
+\index{player@{player}!score@{score}}
+\index{score@{score}!player@{player}}
+\doxysubsubsection{\texorpdfstring{score}{score}}
+{\footnotesize\ttfamily int player\+::score}
+
+punteggio ottenuto secondo determinati criteri illustrati nella relazione \mbox{\Hypertarget{structplayer_a73c9c183def2747cfedee93af46a032f}\label{structplayer_a73c9c183def2747cfedee93af46a032f}} 
+\index{player@{player}!tetraminoes@{tetraminoes}}
+\index{tetraminoes@{tetraminoes}!player@{player}}
+\doxysubsubsection{\texorpdfstring{tetraminoes}{tetraminoes}}
+{\footnotesize\ttfamily int player\+::tetraminoes}
+
+Numero dei tetramini utilizzati e posizionati nel campo 
 
 La documentazione per questa struct è stata generata a partire dal seguente file\+:\begin{DoxyCompactItemize}
 \item 

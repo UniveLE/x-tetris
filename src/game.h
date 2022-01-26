@@ -8,6 +8,8 @@
 #ifndef _GAME_H
 #define _GAME_H
 
+#include "./utils/player/player.h"
+
 /**
  * Costante utilizzata per determinare la difficoltà 
  * del BOT. Il calcolo viene effettuato nel seguente modo:
@@ -52,13 +54,22 @@ typedef enum {
  * Struttura relativa al gioco.
  */
 typedef struct {
+  /** modalità di gioco */
   gameMode gameMode;
+  /** indica se il giocatore ha perso */
   int gameOver;
+  /** numero di tetramini riferito all'Array "tetraminoesNumber" */
   int tetraminoesNumber;
-  int* tetraminoes; /*vettore contenente tutti i tetramini da inserire*/
+  /** vettore contenente tutti i tetramini da inserire */
+  int* tetraminoes;
+  /** difficoltà della partita */
   difficulty difficulty;
 } game;
 
 void startGame();
+void conclusion(char *winnerPlayer);
+int step(player *main_player, player *opponent_player, game *game);
+void cpuMultiPlayer(player *player1, game *game);
+void singleMultiPlayer(player* player1, player* player2, game* game);
 
 #endif

@@ -21,7 +21,6 @@
  */
 void initPlayer(player* player) {
   int i, j;
-  player->moves = 0;
   player->score = 0;
   player->tetraminoes = 1;
 

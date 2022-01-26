@@ -14,7 +14,12 @@
 #define TRUE 1
 #define FALSE 0
 
-
+/**
+* Funzione utilizzata per stampare la scritta che indica
+* il giocatore che ha vinto.
+*
+* @param winnerPlayer nome del giocatore che ha vinto
+*/
 void conclusion(char* winnerPlayer){
   int nameLength = strlen(winnerPlayer), pos, i;
   printf("+----------------------------------------------------------+\n");
@@ -69,6 +74,13 @@ int step(player* main_player, player* opponent_player, game* game) {
   return 0;
 }
 
+/**
+ * Funzione utilizzata per gestire la modalità di gioco
+ * 1 VS CPU.
+ *
+ * @param player1 struttura del giocatore
+ * @param game struttura relativa al gioco
+ */
 void cpuMultiPlayer(player* player1, game* game) {
   int count_player = 0, count_cpu = 0, score = 0, x_score = -1, r_score = -1, height = -1, x_height = -1, r_height = -1;
   player cpu_player;
@@ -148,6 +160,14 @@ void cpuMultiPlayer(player* player1, game* game) {
     conclusion(player1->nickname);
 }
 
+/**
+ * Funzione utilizzata per gestire la modalità di gioco
+ * single player e 1 VS 1.
+ *
+ * @param player1 struttura del giocatore 1
+ * @param player2 struttura del giocatore 2
+ * @param game struttura relativa al gioco 
+ */
 void singleMultiPlayer(player* player1, player* player2, game* game) {
   int count = 0;
   

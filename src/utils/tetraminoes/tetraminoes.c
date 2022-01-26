@@ -9,7 +9,6 @@
 /**
  * Array contente tutti i tetramini
  */
-
 char tetraminoes[7][4][4] = {
     {
         {' ', ' ', ' ', ' '},
@@ -112,7 +111,6 @@ int moveTetramino(char direction, player* player) {
  * @return 1 se è stato ruotato
  *         0 se non è stato possibile ruotare
  */
-
 int rotation(player* player) {
     int tetramino_row_pos, tetramino_col_pos, size, pieces;
     int i, j;

@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['game_10',['game',['../structgame.html',1,'']]],
-  ['game_2eh_11',['game.h',['../game_8h.html',1,'']]],
-  ['gamemode_12',['gameMode',['../game_8h.html#a115508efe199d81fdc8a4d76700c8e94',1,'game.h']]],
-  ['gameover_13',['gameOver',['../player_8h.html#a78af85c22b6279d4125564649b708ea4',1,'player.c']]],
-  ['getsubmatrix_14',['getSubMatrix',['../matrix_8h.html#a0c135f620219effae7da9a4fe29d5053',1,'matrix.c']]]
+  ['findheight_12',['findHeight',['../cpu_8h.html#a8d73e3f9068841b17aff9a82111c6db1',1,'cpu.h']]],
+  ['findscore_13',['findScore',['../cpu_8h.html#a2d9403dc0d524bb3b1808a8caeb2f99b',1,'cpu.h']]]
 ];

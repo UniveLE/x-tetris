@@ -32,6 +32,10 @@ void printLogos(const char* file) {
     free(line);
 }
 
+/**
+* Funzione utilizzata per stampare il menu di navigazione. 
+* Questo permette all'utente di selezionare la modalità di gioco.
+*/
 void menu() {
   printf("\n\n  Seleziona la modalità di gioco:\n");
   printf("          1. Single player\n");

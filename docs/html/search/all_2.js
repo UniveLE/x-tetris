@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['findheight_8',['findHeight',['../cpu_8h.html#a8d73e3f9068841b17aff9a82111c6db1',1,'cpu.h']]],
-  ['findscore_9',['findScore',['../cpu_8h.html#a2d9403dc0d524bb3b1808a8caeb2f99b',1,'cpu.h']]]
+  ['difficulty_9',['difficulty',['../structgame.html#a612303915f1144bbc3b4020036ed2708',1,'game::difficulty()'],['../game_8h.html#a6bdf1adf0ba98c2dad6d1e5b19e5a897',1,'difficulty():&#160;game.h']]],
+  ['directions_5fp1_10',['Directions_p1',['../player_8h.html#a72831687227b0db6b2d54f351acb7cd3',1,'player.h']]],
+  ['directions_5fp2_11',['Directions_p2',['../player_8h.html#a49afcaac4a392b22ea83fbd2eb6f7674',1,'player.h']]]
 ];
