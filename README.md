@@ -9,15 +9,13 @@
 ## Partecipanti
 * Lorenzo Vaccher (matricola: 891921)
 * Corò Elia (matricole: 892507)
+
 ## Link
-
 [Link relazione in Documenti Google](https://docs.google.com/document/d/1TnKNtrtsvZiEISFd6u0V8dcFj1k6fb3T95S-ayjF9LA/edit?usp=sharing)
-
 [Repository Github](https://github.com/UniveLE/x-tetris)
-
 [Doxygen Github Pages](https://univele.github.io/x-tetris/html/index.html)
 
- ## Utilizzo
+## Utilizzo
 ### Step 1: Compilazione
  Per compilare il gioco X-Tetris è sufficiente digitare, tramite il terminale, nella directory principale `make`. Facendo così si andrà a generare l'eseguibile "tetris"
 ### Step 2: Esecuzione
