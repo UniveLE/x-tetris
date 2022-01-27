@@ -20,7 +20,7 @@
 
 ## Utilizzo
 ### Step 1: Compilazione
- Per compilare il gioco X-Tetris è sufficiente digitare, tramite il terminale, nella directory principale `make`. Facendo così si andrà a generare l'eseguibile "tetris".
+ Per compilare il gioco X-Tetris è sufficiente digitare, tramite il terminale, nella directory principale `make`.
 ### Step 2: Esecuzione
  Per eseguire il programma basterà digitare nel terminale `./tetris`.
 
