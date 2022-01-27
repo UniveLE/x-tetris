@@ -15,29 +15,6 @@
 #define TRUE 1
 #define FALSE 0
 
-/**
-* Funzione utilizzata per stampare la scritta che indica
-* il giocatore che ha vinto.
-*
-* @param winnerPlayer nome del giocatore che ha vinto
-*/
-void conclusion(char* winnerPlayer){
-  int nameLength = strlen(winnerPlayer), pos, i;
-  printf("+----------------------------------------------------------+\n");
-
-  pos = (60 - 16- nameLength) / 2;
-  for(i = 0; i < pos; i++){
-    printf(" ");
-  }
-
-  printf("Il vincitore è ");
-
-  for(i = 0; i < nameLength; i++){
-    printf("%c", winnerPlayer[i]);
-  }
-  printf("!\n");
-  printf("+----------------------------------------------------------+\n");
-}
 
 /**
  * Funzione invocata quando il tetramino non può più
@@ -74,6 +51,31 @@ int step(player* main_player, player* opponent_player, game* game) {
   }
   return 0;
 }
+
+/**
+* Funzione utilizzata per stampare la scritta che indica
+* il giocatore che ha vinto.
+*
+* @param winnerPlayer nome del giocatore che ha vinto
+*/
+void conclusion(char* winnerPlayer){
+  int nameLength = strlen(winnerPlayer), pos, i;
+  printf("+----------------------------------------------------------+\n");
+
+  pos = (60 - 16- nameLength) / 2;
+  for(i = 0; i < pos; i++){
+    printf(" ");
+  }
+
+  printf("Il vincitore è ");
+
+  for(i = 0; i < nameLength; i++){
+    printf("%c", winnerPlayer[i]);
+  }
+  printf("!\n");
+  printf("+----------------------------------------------------------+\n");
+}
+
 
 /**
  * Funzione utilizzata per gestire la modalità di gioco
@@ -232,7 +234,7 @@ void singleMultiPlayer(player* player1, player* player2, game* game) {
     saveScore(player2, game);
   
   printf("\n\n-> ***** GAME OVER ***** <-\n\n");
-  if(player2 != NULL || player1->score != player2->score)
+  if(player2 != NULL && player1->score != player2->score)
     if(player1->score > player2->score)
       conclusion(player1->nickname);
     else
