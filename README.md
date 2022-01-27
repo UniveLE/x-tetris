@@ -45,7 +45,7 @@ Gli strumenti e software utilizzati, utili allo sviluppo del videogioco X-tetris
 
 ## Problematiche riscontrate
 * **Rotazione dei tetramini nel campo da gioco**:  
-    Risoluzione: la rotazione dei tetramini è stata realizzata mediante un sistema che permette di ottenere la sottomatrice quadrata del pezzo in movimento, di ruotarla e di posizionarla nuovamente nel punto originale.  La problematica principale di questa operazione è stata l'effettiva concetualizzazione dell'algoritmo di rotazione. Inizialmente si pensava di fare la trasposta della matrice ma tale operazione implicava un problema nel momento in cui si applicava per due volte tale operazione alla sottomatrice, come si può notare dalle immagini sottostanti. 
+    Risoluzione: la rotazione dei tetramini è stata realizzata mediante un sistema che permette di ottenere la sottomatrice quadrata del pezzo in movimento, di ruotarla e di posizionarla nuovamente nel punto originale.  La problematica principale di questa operazione è stata l'effettiva concettualizzazione dell'algoritmo di rotazione. Inizialmente si pensava di fare la trasposta della matrice ma tale operazione implicava un problema nel momento in cui si applicava per due volte tale operazione alla sottomatrice, come si può notare dalle immagini sottostanti. 
 
     ![](./img/trasposta.png)
 
