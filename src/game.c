@@ -272,7 +272,7 @@ void startGame() {
 
     /*questo controllo evita la richiesta all'utente riguardante il numero massimo di tetramini
     e la difficoltà quando vuole visualizzare i punteggi*/
-    if (game.gameMode != PLAYER_SCORE) {
+    if (game.gameMode != PLAYER_SCORE && game.gameMode != EXIT) {
       /*l'utente decide il numero massimo di tetramini utilizzabili*/
       printf("Numero di tetramini utilizzabili: ");
       scanf(" %d", &(game.tetraminoesNumber));
